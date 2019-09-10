@@ -8,24 +8,30 @@ public class CowController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-    	//Determine orientation
+    	determineOrientation();
+        determineTrack();
+    }
+
+    void determineOrientation(){
         if(Random.Range(0.0f, 1.0f) < 0.5f){
-        	transform.Rotate(0, 90.0f, 0);
+            transform.Rotate(0, 90.0f, 0);
         }else{
-        	transform.Rotate(0, -90.0f, 0);
+            transform.Rotate(0, -90.0f, 0);
         }
+    }
 
-        //Determine track
-        float laneRandom = Random.Range(0.0f, 1.0f);
-        if(laneRandom < 0.33){
-        	track = 0;
-        }else if(laneRandom < 0.66){
-        	track = 1;
-    	}else{
-    		track = 2;
-    	}
-
-
+    void determineTrack(){
+        float trackRandom = Random.Range(0.0f, 1.0f);
+        if(trackRandom < 0.33){
+            track = 0;
+            transform.position = new Vector3(-9.0f, transform.position.y, transform.position.z);
+        }else if(trackRandom < 0.66){
+            track = 1;
+            transform.position = new Vector3(0.0f, transform.position.y, transform.position.z);
+        }else{
+            track = 2;
+            transform.position = new Vector3(9.0f, transform.position.y, transform.position.z);
+        }
     }
 
     // Update is called once per frame
