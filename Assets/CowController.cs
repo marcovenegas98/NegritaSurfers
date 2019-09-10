@@ -8,10 +8,11 @@ public class CowController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-    	determineOrientation();
-        determineTrack();
+    	//determineOrientation();
+        //determineTrack();
     }
-
+    //Cow controller should not be responsible for this logic, will refactor
+    /*
     void determineOrientation(){
         if(Random.Range(0.0f, 1.0f) < 0.5f){
             transform.Rotate(0, 90.0f, 0);
@@ -33,6 +34,7 @@ public class CowController : MonoBehaviour
             transform.position = new Vector3(9.0f, transform.position.y, transform.position.z);
         }
     }
+    */
 
     // Update is called once per frame
     void Update()
