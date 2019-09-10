@@ -123,7 +123,7 @@ GameObject:
   - component: {fileID: 177054499}
   - component: {fileID: 177054498}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Field Populator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
