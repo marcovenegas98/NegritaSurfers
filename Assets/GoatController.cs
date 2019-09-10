@@ -5,21 +5,21 @@ using UnityEngine;
 public class GoatController : MonoBehaviour
 {
 	public int track;
-
-	bool moving;
 	public float timeSwitchingTracks;
-	float t;
-	Vector3 startPosition;
-	Vector3 target;
-	IEnumerator coroutine;
+
+	private bool moving;
+	private float t;
+	private Vector3 startPosition;
+	private Vector3 target;
+	private IEnumerator coroutine;
+
+	private int btwnTrackDistance = 9;
 
 
     // Start is called before the first frame update
     void Start()
     {
     	moving = false;
-    	determineOrientation();
-        determineTrackStart();
         startPosition = target = transform.position;
         coroutine = changeTrack();
         StartCoroutine(coroutine);
@@ -28,34 +28,12 @@ public class GoatController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-    	if(moving && (transform.position != target)){
-    		t += Time.deltaTime/timeSwitchingTracks;
+    	if(moving && (transform.position != target)){ //Move to the target
+    		t += Time.deltaTime/timeSwitchingTracks; 
         	transform.position = Vector3.Lerp(startPosition, target, t);
     	}else{
     		moving = false;
     	}
-    }
-
-    private void determineOrientation(){
-        if(Random.Range(0.0f, 1.0f) < 0.5f){
-            transform.Rotate(0, 90.0f, 0);
-        }else{
-            transform.Rotate(0, -90.0f, 0);
-        }
-    }
-
-    private void determineTrackStart(){
-    	float trackRandom = Random.Range(0.0f, 1.0f);
-        if(trackRandom < 0.33){
-            track = 0;
-            transform.position = new Vector3(-9.0f, transform.position.y, transform.position.z);
-        }else if(trackRandom < 0.66){
-            track = 1;
-            transform.position = new Vector3(0.0f, transform.position.y, transform.position.z);
-        }else{
-            track = 2;
-            transform.position = new Vector3(9.0f, transform.position.y, transform.position.z);
-        }
     }
 
     //Co-routine to change track every random seconds
@@ -64,27 +42,26 @@ public class GoatController : MonoBehaviour
     		if(!moving){
     			Vector3 destination = new Vector3(0.0f, 0.0f, 0.0f);
 		    	switch(track){
-		    		case 0: {//Left track, move to middle track, looking left, rotate 180
-		    			destination = new Vector3(0.0f, transform.position.y, transform.position.z);
+		    		case 0: {//Left track, move to middle track, looking left
+		    			destination = new Vector3(transform.position.x + btwnTrackDistance, transform.position.y, transform.position.z);
 		    			changeOrientationRight();
 		    			track = 1;
-		    			transform.Rotate(0, 180.0f, 0);
 		    		}break;
 		    		case 1: { //Middle track, move to either
 		    			if(Random.Range(0.0f, 1.0f) < 0.5f){
 		    				//Move to left
-		    				destination = new Vector3(-9.0f, transform.position.y, transform.position.z);
+		    				destination = new Vector3(transform.position.x - btwnTrackDistance, transform.position.y, transform.position.z);
 		    				changeOrientationLeft();
-		    				track = 1;
+		    				track = 0;
 						}else{
 							//Move to right
-							destination = new Vector3(9.0f, transform.position.y, transform.position.z);
+							destination = new Vector3(transform.position.x + btwnTrackDistance, transform.position.y, transform.position.z);
 							changeOrientationRight();
 							track = 2;
 						}
 		    		}break;
 		    		case 2: {//Right track, move to middle track
-		    			destination = new Vector3(0.0f, transform.position.y, transform.position.z);
+		    			destination = new Vector3(transform.position.x - btwnTrackDistance, transform.position.y, transform.position.z);
 		    			changeOrientationLeft();
 		    			track = 1;
 		    		}break;
