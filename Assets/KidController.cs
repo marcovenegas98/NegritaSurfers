@@ -44,7 +44,7 @@ public class KidController : MonoBehaviour
 		}
 
 		rb.position = Vector3.MoveTowards(rb.position, desiredDirection, maxDistanceDelta: Time.deltaTime * horizontalSpeed);
-		rb.position = Vector3.MoveTowards(rb.position, new Vector3(rb.position.x, rb.position.y, rb.position.z + 1), maxDistanceDelta: Time.deltaTime * fowardSpeed);
+		rb.position = Vector3.MoveTowards(rb.position, rb.position + Vector3.forward, maxDistanceDelta: Time.deltaTime * fowardSpeed);
 
 	}
 }
