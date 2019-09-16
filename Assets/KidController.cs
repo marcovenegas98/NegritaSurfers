@@ -2,67 +2,54 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class KidController : MonoBehaviour
-{	
-	public float speed = 10;
-	public Vector3 left = new Vector3(-9, (float)3.4393, 0);
-	public Vector3 center = new Vector3(0, (float)3.4393, 0);
-	public Vector3 right = new Vector3(9, (float)3.4393, 0);
-	public Vector3 currentPosition;
-	public Vector3 desiredPosition;
-	public float distance = 0;
-	public bool isJumping = false; 
+{
+	enum Position { LEFT, CENTER, RIGHT};
+	[SerializeField]
+	private Position current;
 	private Rigidbody rb;
-	// Start is called before the first frame update
+	public float fowardSpeed = 10;
+	public float horizontalSpeed = 30;
+	private Vector3 desiredDirection;
+	// Start is called before the first frame update 
 	void Start()
-    {
+	{
 		rb = GetComponent<Rigidbody>();
-		rb.position = center;
-		currentPosition = center;
-		desiredPosition = center;
+		current = Position.CENTER;
 	}
 
 	void Update()
 	{
-		distance = Vector3.Distance(rb.position, desiredPosition);
-		
-		if (distance < 0.15)
+		if (Input.GetKeyDown(KeyCode.A)  && current != Position.LEFT)
 		{
-			currentPosition = desiredPosition;
-			if (Input.GetAxis("Horizontal") < 0)
-			{
-				if (currentPosition.Equals(center))
-				{
-					desiredPosition = left;
-				}
-				else if (currentPosition.Equals(right))
-				{
-					desiredPosition = center;
-				}
+			current--;
+		}
+		else if (Input.GetKeyDown(KeyCode.D) && current != Position.RIGHT)
+		{
+			current++;
+		}
 
-			}
-			else if (Input.GetAxis("Horizontal") > 0)
-			{
-				if (currentPosition.Equals(center))
-				{
-					desiredPosition = right;
-				}
-				else if (currentPosition.Equals(left))
-				{
-					desiredPosition = center;
-				}
-
-			}
+		if (current == Position.LEFT)
+		{
+			desiredDirection = new Vector3(-9, rb.position.y, rb.position.z);
+		}
+		else if (current == Position.CENTER)
+		{
+			desiredDirection = new Vector3(0, rb.position.y, rb.position.z);
 		}
 		else
 		{
-			rb.position = Vector3.MoveTowards(transform.position, desiredPosition, maxDistanceDelta: Time.fixedDeltaTime * speed);
+			desiredDirection = new Vector3(9, rb.position.y, rb.position.z);
 		}
-		
+
+		rb.position = Vector3.MoveTowards(rb.position, desiredDirection, maxDistanceDelta: Time.deltaTime * horizontalSpeed);
+		rb.position = Vector3.MoveTowards(rb.position, new Vector3(rb.position.x, rb.position.y, rb.position.z + 1), maxDistanceDelta: Time.deltaTime * fowardSpeed);
+
 	}
-// Update is called once per frame
-void FixedUpdate()
-    {
-		
+	// Update is called once per frame 
+	void FixedUpdate()
+	{
+
 	}
 }
