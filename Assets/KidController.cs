@@ -47,9 +47,4 @@ public class KidController : MonoBehaviour
 		rb.position = Vector3.MoveTowards(rb.position, new Vector3(rb.position.x, rb.position.y, rb.position.z + 1), maxDistanceDelta: Time.deltaTime * fowardSpeed);
 
 	}
-	// Update is called once per frame 
-	void FixedUpdate()
-	{
-
-	}
 }
