@@ -5,12 +5,13 @@ using UnityEngine;
 
 public class KidController : MonoBehaviour
 {
-	enum Position { LEFT, CENTER, RIGHT};
+	enum Position { LEFT = -1, CENTER = 0, RIGHT = 1};
 	[SerializeField]
-	private Position current;
-	private Rigidbody rb;
 	public float fowardSpeed = 10;
 	public float horizontalSpeed = 30;
+	public float distanceLanes = 9;
+	private Position current;
+	private Rigidbody rb;
 	private Vector3 desiredDirection;
 	// Start is called before the first frame update 
 	void Start()
@@ -30,21 +31,10 @@ public class KidController : MonoBehaviour
 			current++;
 		}
 
-		if (current == Position.LEFT)
-		{
-			desiredDirection = new Vector3(-9, rb.position.y, rb.position.z);
-		}
-		else if (current == Position.CENTER)
-		{
-			desiredDirection = new Vector3(0, rb.position.y, rb.position.z);
-		}
-		else
-		{
-			desiredDirection = new Vector3(9, rb.position.y, rb.position.z);
-		}
+		desiredDirection = new Vector3(distanceLanes * (int)current, rb.position.y, rb.position.z);
 
 		rb.position = Vector3.MoveTowards(rb.position, desiredDirection, maxDistanceDelta: Time.deltaTime * horizontalSpeed);
-		rb.position = Vector3.MoveTowards(rb.position, rb.position + Vector3.forward, maxDistanceDelta: Time.deltaTime * fowardSpeed);
+		//rb.position = Vector3.MoveTowards(rb.position, rb.position + Vector3.forward, maxDistanceDelta: Time.deltaTime * fowardSpeed);
 
 	}
 }
