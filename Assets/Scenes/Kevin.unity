@@ -159,6 +159,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &290065519 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 138796, guid: c4ff960a3e8a4d343ac4a77794815b5a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1364018960}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &377907040
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -667,6 +673,7 @@ GameObject:
   - component: {fileID: 1298786164}
   - component: {fileID: 1298786169}
   - component: {fileID: 1298786168}
+  - component: {fileID: 1298786170}
   m_Layer: 0
   m_Name: Kiddo
   m_TagString: Untagged
@@ -776,9 +783,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b648cd52ed7874fa1984d5691662d03e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  current: 1
   fowardSpeed: 10
   horizontalSpeed: 30
+  distanceLanes: 9
+  fallMultiplier: 2.5
+  jumpForce: 10
+  anim: {fileID: 0}
+  ob: {fileID: 290065519}
+--- !u!95 &1298786170
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1298786163}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b59b8245fef10794dab80283717a96de, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1311112437
 GameObject:
   m_ObjectHideFlags: 0
@@ -887,6 +917,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Character
       objectReference: {fileID: 0}
+    - target: {fileID: 138796, guid: c4ff960a3e8a4d343ac4a77794815b5a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 487636, guid: c4ff960a3e8a4d343ac4a77794815b5a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.006515112
@@ -970,7 +1004,7 @@ PrefabInstance:
     - target: {fileID: 11119530, guid: c4ff960a3e8a4d343ac4a77794815b5a, type: 3}
       propertyPath: m_Animations.Array.data[5]
       value: 
-      objectReference: {fileID: 7400000, guid: 7b707918556e11e4e8b4c8acf7af443c, type: 3}
+      objectReference: {fileID: 7400000, guid: e54e8a86a161a52409c0fed988d94829, type: 3}
     - target: {fileID: 11119530, guid: c4ff960a3e8a4d343ac4a77794815b5a, type: 3}
       propertyPath: m_Animations.Array.data[6]
       value: 
@@ -1275,7 +1309,7 @@ GameObject:
   - component: {fileID: 1736808255}
   m_Layer: 0
   m_Name: Terrain
-  m_TagString: Untagged
+  m_TagString: terrain
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295

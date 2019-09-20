@@ -43,7 +43,7 @@ public class KidController : MonoBehaviour
 		if (Input.GetKeyDown(KeyCode.Space) && IsGrounded())
 		{
 			rb.AddForce(new Vector3(0, jumpForce, 0), ForceMode.Impulse);
-			anim.CrossFade("Jump");
+			anim.CrossFade("Jump_3");
 		}
 		
 		desiredDirection = new Vector3(distanceLanes * (int)current, rb.position.y, rb.position.z);
