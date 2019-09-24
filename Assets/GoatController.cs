@@ -13,7 +13,7 @@ public class GoatController : MonoBehaviour
 	private Vector3 target;
 	private IEnumerator coroutine;
 
-	private int btwnTrackDistance = 9;
+	private int btwnTrackDistance = 10;
 
 
     // Start is called before the first frame update
