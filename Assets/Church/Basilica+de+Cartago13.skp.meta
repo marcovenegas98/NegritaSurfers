@@ -1,0 +1,343 @@
+fileFormatVersion: 2
+guid: 1f1d1994775bf4f4aa22e8e4dcf62845
+SketchUpImporter:
+  generateBackFace: 0
+  mergeCoplanarFaces: 0
+  selectedNodes: 00000000010000000a0000000b0000000c0000000d0000000e0000000f000000100000001100000012000000130000001400000015000000160000001700000018000000190000001a0000001b0000001c0000001d0000001e0000001f000000200000002100000022000000230000002400000025000000260000002700000028000000290000002a0000002b0000002c0000002d0000002e0000002f000000300000003100000032000000330000003400000035000000360000003700000038000000390000003a0000003b0000003c0000003d0000003e0000003f000000400000004100000042000000430000004400000045000000460000004700000048000000490000004a0000004b0000004c0000004d0000004e0000004f000000500000005100000052000000530000005400000055000000560000005700000058000000590000005a0000005b0000005c0000005d0000005e0000005f0000006000000061000000
+  assetHash:
+    serializedVersion: 2
+    Hash: f8565ff50578bf3e96877d688fdea15b
+  longitude: -83.912819
+  latitude: 9.864054
+  northCorrection: 359.5001583217361
+  fileUnit: 0
+  sketchUpImportData:
+    defaultCamera:
+      position: {x: -79.271484, y: 6.686983, z: 50.091957}
+      lookAt: {x: -1.2809813, y: 15.394073, z: -0.15069248}
+      up: {x: -0.07855367, y: 0.99562466, z: 0.050605446}
+      fov: 35
+      aspectRatio: 0
+      orthoSize: 1
+      isPerspective: 1
+    scenes: []
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: 'angel '
+    100002: angel  1
+    100004: angel  2
+    100006: angel  3
+    100008: angel 2
+    100010: angel 2 1
+    100012: angel 2 2
+    100014: angel 2 3
+    100016: //RootNode
+    100018: columna
+    100020: columna 1
+    100022: columna 2
+    100024: columna 3
+    100026: columna 4
+    100028: columna 5
+    100030: columna 6
+    100032: columna 7
+    100034: Componente#1
+    100036: Componente#1 1
+    100038: Componente#1 2
+    100040: Componente#1 3
+    100042: Componente#1 4
+    100044: Componente#1 5
+    100046: Componente#2
+    100048: Componente#2 1
+    100050: Componente#3
+    100052: Componente#3 1
+    100054: Componente#4
+    100056: Componente#4 1
+    100058: cupula
+    100060: cupula 1
+    100062: detalle cupula
+    100064: detalle cupula 1
+    100066: kiosco
+    100068: 'pendiente '
+    100070: rampa
+    100072: rampa salida
+    100074: tope torre
+    100076: tope torre 1
+    100078: torre lateral
+    100080: torre lateral 1
+    100082: torrecillas
+    100084: torrecillas 1
+    100086: torrecillas 2
+    100088: torrecillas 3
+    400000: 'angel '
+    400002: angel  1
+    400004: angel  2
+    400006: angel  3
+    400008: angel 2
+    400010: angel 2 1
+    400012: angel 2 2
+    400014: angel 2 3
+    400016: //RootNode
+    400018: columna
+    400020: columna 1
+    400022: columna 2
+    400024: columna 3
+    400026: columna 4
+    400028: columna 5
+    400030: columna 6
+    400032: columna 7
+    400034: Componente#1
+    400036: Componente#1 1
+    400038: Componente#1 2
+    400040: Componente#1 3
+    400042: Componente#1 4
+    400044: Componente#1 5
+    400046: Componente#2
+    400048: Componente#2 1
+    400050: Componente#3
+    400052: Componente#3 1
+    400054: Componente#4
+    400056: Componente#4 1
+    400058: cupula
+    400060: cupula 1
+    400062: detalle cupula
+    400064: detalle cupula 1
+    400066: kiosco
+    400068: 'pendiente '
+    400070: rampa
+    400072: rampa salida
+    400074: tope torre
+    400076: tope torre 1
+    400078: torre lateral
+    400080: torre lateral 1
+    400082: torrecillas
+    400084: torrecillas 1
+    400086: torrecillas 2
+    400088: torrecillas 3
+    2100000: _defaultMat
+    2100002: ventanitas central
+    2100004: frente 001
+    2100006: techo
+    2100008: ventanitas 3
+    2100010: Google Earth Snapshot#1
+    2100012: techo1
+    2100014: puerta lateral principal5
+    2100016: ventanas atras1
+    2100018: pared 04
+    2100020: pared 03
+    2100022: pared 05
+    2100024: pared y ventanas
+    2100026: "base cupula peque\xF1a"
+    2100028: relleno gris
+    2100030: angel lanza
+    2100032: Google Earth Snapshot
+    2100034: columna#1
+    2100036: porton
+    2100038: ventanas cupula
+    2100040: cupula principal10
+    2100042: ventana alta1
+    2100044: mini cupulas
+    2100046: ventanitas 2
+    2100048: torres laterales
+    2100050: angel costado
+    2100052: angel
+    2100054: angel 1
+    2100056: angel alas cerradas
+    2100058: detalle torres
+    2100060: +
+    2100062: tope torre
+    2100064: cupula kiosco
+    2100066: columna
+    2100068: 2 ventanas
+    2300000: 'angel '
+    2300002: angel  1
+    2300004: angel  2
+    2300006: angel  3
+    2300008: angel 2
+    2300010: angel 2 1
+    2300012: angel 2 2
+    2300014: angel 2 3
+    2300016: //RootNode
+    2300018: columna
+    2300020: columna 1
+    2300022: columna 2
+    2300024: columna 3
+    2300026: columna 4
+    2300028: columna 5
+    2300030: columna 6
+    2300032: columna 7
+    2300034: Componente#1
+    2300036: Componente#1 1
+    2300038: Componente#1 2
+    2300040: Componente#1 3
+    2300042: Componente#1 4
+    2300044: Componente#1 5
+    2300046: Componente#2
+    2300048: Componente#2 1
+    2300050: Componente#3
+    2300052: Componente#3 1
+    2300054: Componente#4
+    2300056: Componente#4 1
+    2300058: cupula
+    2300060: cupula 1
+    2300062: detalle cupula
+    2300064: detalle cupula 1
+    2300066: kiosco
+    2300068: 'pendiente '
+    2300070: rampa
+    2300072: rampa salida
+    2300074: tope torre
+    2300076: tope torre 1
+    2300078: torre lateral
+    2300080: torre lateral 1
+    2300082: torrecillas
+    2300084: torrecillas 1
+    2300086: torrecillas 2
+    2300088: torrecillas 3
+    3300000: 'angel '
+    3300002: angel  1
+    3300004: angel  2
+    3300006: angel  3
+    3300008: angel 2
+    3300010: angel 2 1
+    3300012: angel 2 2
+    3300014: angel 2 3
+    3300016: //RootNode
+    3300018: columna
+    3300020: columna 1
+    3300022: columna 2
+    3300024: columna 3
+    3300026: columna 4
+    3300028: columna 5
+    3300030: columna 6
+    3300032: columna 7
+    3300034: Componente#1
+    3300036: Componente#1 1
+    3300038: Componente#1 2
+    3300040: Componente#1 3
+    3300042: Componente#1 4
+    3300044: Componente#1 5
+    3300046: Componente#2
+    3300048: Componente#2 1
+    3300050: Componente#3
+    3300052: Componente#3 1
+    3300054: Componente#4
+    3300056: Componente#4 1
+    3300058: cupula
+    3300060: cupula 1
+    3300062: detalle cupula
+    3300064: detalle cupula 1
+    3300066: kiosco
+    3300068: 'pendiente '
+    3300070: rampa
+    3300072: rampa salida
+    3300074: tope torre
+    3300076: tope torre 1
+    3300078: torre lateral
+    3300080: torre lateral 1
+    3300082: torrecillas
+    3300084: torrecillas 1
+    3300086: torrecillas 2
+    3300088: torrecillas 3
+    4300000: Mesh Basilica+de+Cartago13
+    4300002: Mesh cupula
+    4300004: Mesh Componente#2
+    4300006: Mesh Componente#3
+    4300008: Mesh torrecillas
+    4300010: Mesh Componente#4
+    4300012: Mesh torre lateral
+    4300014: 'Mesh angel '
+    4300016: Mesh angel 2
+    4300018: Mesh detalle cupula
+    4300020: Mesh tope torre
+    4300022: Mesh rampa
+    4300024: Mesh kiosco
+    4300026: Mesh columna
+    4300028: Mesh rampa salida
+    4300030: 'Mesh pendiente '
+    4300032: Mesh Componente#1
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 2
+    materialSearch: 0
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.0254
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
