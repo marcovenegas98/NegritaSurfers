@@ -11,6 +11,11 @@ public abstract class Obstacle : MonoBehaviour
         determineTrack();
     }
 
+    protected void Update(){
+        if(transform.position.z < -100f){
+            Destroy(gameObject);
+        }
+    }
 
     void determineTrack(){
     	//At the start, every obstacle can only have 3 posible values for x, -10, 0 and 10.

@@ -15,11 +15,9 @@ public class Train : Obstacle
 
 	void Update()
 	{
+		base.Update();
 		if(isNearPlayer() && moves){
 			move();
-		}
-		if(transform.position.z < -100f){
-				//Get destroyed
 		}
 	}
 
