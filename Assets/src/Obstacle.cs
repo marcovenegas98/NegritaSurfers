@@ -11,11 +11,6 @@ public abstract class Obstacle : MonoBehaviour
         determineTrack();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     void determineTrack(){
     	//At the start, every obstacle can only have 3 posible values for x, -10, 0 and 10.
