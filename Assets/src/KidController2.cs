@@ -1,38 +1,44 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class KidController2 : MonoBehaviour
 {
     
+	struct KidState
+    {
+    	public bool isAlive;
+        public bool isGrounded;
+        public bool isMoving;
+        public bool isJuiced;
+    }
+
 	public float timeSwitchingTracks;
-	public float jumpHeight = 70f;
+	public float jumpHeight = 400f;
+   
     private TracksEnum currentTrack = TracksEnum.MIDDLE;
-	private bool moving;
+	private int btwnTrackDistance = 10;
+	private float extraGravity = 9.8f;
+    private KidState kidState;
+	private Rigidbody rigidBody;
 	private float t;
 	private float startPosition;
 	private float target;
-	private int btwnTrackDistance = 10;
-	private Rigidbody rigidBody;
-	private bool isGrounded;
-	private float yLimit;
-	private float extraGravity = 9.8f;
 
     // Start is called before the first frame update
     void Start()
     {
-        moving = false;
+        kidState.isMoving = false;
         startPosition = target = transform.localPosition.x;
         rigidBody = GetComponent<Rigidbody>();
-        isGrounded = true;
-        yLimit = transform.localPosition.y;
+        kidState.isGrounded = true;
     }
 
     // Update is called once per frame
     void Update()
     {
     	//Jumping
-    	if(isGrounded){
+    	if(kidState.isGrounded){
     		if(Input.GetAxis("Vertical") > 0){
     			rigidBody.AddForce(Vector3.up * jumpHeight);
     		}
@@ -43,11 +49,11 @@ public class KidController2 : MonoBehaviour
     	}
 
 
-    	if(moving && (transform.localPosition.x != target)){ //Move to the target
+    	if(kidState.isMoving && (transform.localPosition.x != target)){ //Move to the target
     		t += Time.deltaTime/timeSwitchingTracks; 
         	transform.localPosition = new Vector3(Mathf.Lerp(startPosition, target, t), transform.localPosition.y, transform.localPosition.z);
     	}else{ //If not moving
-    		moving = false;
+    		kidState.isMoving = false;
     		//Receive input and determine if should change tracks
 	    	float direction = Input.GetAxis("Horizontal");
 	        if(direction != 0){
@@ -92,7 +98,7 @@ public class KidController2 : MonoBehaviour
 
     	if(willMove){
     		setDestination(destination, timeSwitchingTracks);
-    		moving = true;
+    		kidState.isMoving = true;
     	}
     }
 
@@ -108,7 +114,7 @@ public class KidController2 : MonoBehaviour
 	{
 		if (other.gameObject.tag == "Ground")
 	    {
-	        isGrounded = true;
+	        kidState.isGrounded = true;
 	    }
 	}
 	 
@@ -116,7 +122,7 @@ public class KidController2 : MonoBehaviour
 	{
 	    if (other.gameObject.tag == "Ground")
 	    {
-	        isGrounded = false;
+	        kidState.isGrounded = false;
 	    }
 	}
 }
