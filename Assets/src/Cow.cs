@@ -4,5 +4,10 @@ using UnityEngine;
 
 public class Cow : ObstacleX
 {
-    
+    // Update is called once per frame
+	void Update()
+	{
+	    base.Update();
+	}
 }
+

@@ -15,7 +15,7 @@ public abstract class ObstacleX : Obstacle
     // Update is called once per frame
     void Update()
     {
-        
+        base.Update();
     }
 
     void determineOrientation(){

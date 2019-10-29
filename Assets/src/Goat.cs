@@ -28,6 +28,7 @@ public class Goat : ObstacleX
     // Update is called once per frame
     void Update()
     {
+        base.Update();
     	if(moving && (transform.localPosition != target)){ //Move to the target
     		t += Time.deltaTime/timeSwitchingTracks; 
         	transform.localPosition = Vector3.Lerp(startPosition, target, t);
