@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,7 +6,7 @@ public class KidController2 : MonoBehaviour
 {
     
 	public float timeSwitchingTracks;
-	public float jumpHeight = 70f;
+	public float jumpHeight = 400f;
     private TracksEnum currentTrack = TracksEnum.MIDDLE;
 	private bool moving;
 	private float t;
