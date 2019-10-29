@@ -1109,7 +1109,7 @@ GameObject:
   - component: {fileID: 4481319244126830844}
   - component: {fileID: 4481319244126830843}
   m_Layer: 0
-  m_Name: EmptyMapSlice 1
+  m_Name: 2.1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11606,7 +11606,7 @@ PrefabInstance:
     - target: {fileID: 237419792085459742, guid: aba1bb981fc674ed4ba646d72f001095,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -19.400002
+      value: -11.2
       objectReference: {fileID: 0}
     - target: {fileID: 237419792085459742, guid: aba1bb981fc674ed4ba646d72f001095,
         type: 3}
@@ -11776,7 +11776,7 @@ PrefabInstance:
     - target: {fileID: 237419792085459742, guid: aba1bb981fc674ed4ba646d72f001095,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -17.8
+      value: -11.3
       objectReference: {fileID: 0}
     - target: {fileID: 237419792085459742, guid: aba1bb981fc674ed4ba646d72f001095,
         type: 3}
@@ -11941,7 +11941,7 @@ PrefabInstance:
     - target: {fileID: 237419792085459742, guid: aba1bb981fc674ed4ba646d72f001095,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -19.400002
+      value: -9.6
       objectReference: {fileID: 0}
     - target: {fileID: 237419792085459742, guid: aba1bb981fc674ed4ba646d72f001095,
         type: 3}
