@@ -29,7 +29,7 @@ public class RandomGenerator : MonoBehaviour
             listLeftLimit = Mathf.RoundToInt(Mathf.Floor(index / TOTAL_CHUNKS_PER_LEVEL) * TOTAL_PREFABS_PER_LEVEL);
             listRightLimit = listLeftLimit + TOTAL_PREFABS_PER_LEVEL;
             nextInt = Random.Range(listLeftLimit, listRightLimit);
-            Instantiate(levelsList[nextInt], new Vector3(80, 0, (253 + 250 * index)), quat);
+            Instantiate(levelsList[nextInt], new Vector3(10, -0.1f, (253 + 250 * index)), quat);
         }
     }
 

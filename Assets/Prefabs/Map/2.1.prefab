@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 4481319244027198150}
   - component: {fileID: 4481319244027198149}
   - component: {fileID: 4481319244027198148}
-  - component: {fileID: 4481319244027198147}
   - component: {fileID: 4481319244027198146}
   m_Layer: 0
   m_Name: EmptyMapSlice (4)
@@ -89,27 +88,11 @@ MeshCollider:
   m_GameObject: {fileID: 4481319244027198144}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &4481319244027198147
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4481319244027198144}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &4481319244027198146
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -294,7 +277,6 @@ GameObject:
   - component: {fileID: 4481319244033493625}
   - component: {fileID: 4481319244033493624}
   - component: {fileID: 4481319244033493575}
-  - component: {fileID: 4481319244033493574}
   - component: {fileID: 4481319244033493573}
   m_Layer: 0
   m_Name: EmptyMapSlice (54)
@@ -371,27 +353,11 @@ MeshCollider:
   m_GameObject: {fileID: 4481319244033493571}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &4481319244033493574
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4481319244033493571}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &4481319244033493573
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -496,7 +462,6 @@ GameObject:
   - component: {fileID: 4481319244043081571}
   - component: {fileID: 4481319244043081570}
   - component: {fileID: 4481319244043081569}
-  - component: {fileID: 4481319244043081568}
   - component: {fileID: 4481319244043081583}
   m_Layer: 0
   m_Name: EmptyMapSlice (56)
@@ -573,27 +538,11 @@ MeshCollider:
   m_GameObject: {fileID: 4481319244043081581}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &4481319244043081568
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4481319244043081581}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &4481319244043081583
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -618,7 +567,6 @@ GameObject:
   - component: {fileID: 4481319244048305077}
   - component: {fileID: 4481319244048305076}
   - component: {fileID: 4481319244048305075}
-  - component: {fileID: 4481319244048305074}
   - component: {fileID: 4481319244048305073}
   m_Layer: 0
   m_Name: EmptyMapSlice (16)
@@ -695,27 +643,11 @@ MeshCollider:
   m_GameObject: {fileID: 4481319244048305087}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &4481319244048305074
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4481319244048305087}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &4481319244048305073
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -740,7 +672,6 @@ GameObject:
   - component: {fileID: 4481319244086530878}
   - component: {fileID: 4481319244086530877}
   - component: {fileID: 4481319244086530876}
-  - component: {fileID: 4481319244086530875}
   - component: {fileID: 4481319244086530874}
   m_Layer: 0
   m_Name: EmptyMapSlice (22)
@@ -817,27 +748,11 @@ MeshCollider:
   m_GameObject: {fileID: 4481319244086530872}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &4481319244086530875
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4481319244086530872}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &4481319244086530874
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -862,7 +777,6 @@ GameObject:
   - component: {fileID: 4481319244096459349}
   - component: {fileID: 4481319244096459348}
   - component: {fileID: 4481319244096459347}
-  - component: {fileID: 4481319244096459346}
   - component: {fileID: 4481319244096459345}
   m_Layer: 0
   m_Name: EmptyMapSlice (74)
@@ -939,27 +853,11 @@ MeshCollider:
   m_GameObject: {fileID: 4481319244096459359}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &4481319244096459346
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4481319244096459359}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &4481319244096459345
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -984,7 +882,6 @@ GameObject:
   - component: {fileID: 4481319244121000202}
   - component: {fileID: 4481319244121000201}
   - component: {fileID: 4481319244121000200}
-  - component: {fileID: 4481319244121000215}
   - component: {fileID: 4481319244121000214}
   m_Layer: 0
   m_Name: EmptyMapSlice (14)
@@ -1061,27 +958,11 @@ MeshCollider:
   m_GameObject: {fileID: 4481319244121000212}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &4481319244121000215
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4481319244121000212}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &4481319244121000214
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1106,7 +987,6 @@ GameObject:
   - component: {fileID: 4481319244126830847}
   - component: {fileID: 4481319244126830846}
   - component: {fileID: 4481319244126830845}
-  - component: {fileID: 4481319244126830844}
   - component: {fileID: 4481319244126830843}
   m_Layer: 0
   m_Name: 2.1
@@ -1294,22 +1174,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &4481319244126830844
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4481319244126830842}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &4481319244126830843
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1365,7 +1229,6 @@ GameObject:
   - component: {fileID: 4481319244150409117}
   - component: {fileID: 4481319244150409116}
   - component: {fileID: 4481319244150409115}
-  - component: {fileID: 4481319244150409114}
   - component: {fileID: 4481319244150409113}
   m_Layer: 0
   m_Name: EmptyMapSlice (24)
@@ -1442,27 +1305,11 @@ MeshCollider:
   m_GameObject: {fileID: 4481319244150408807}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &4481319244150409114
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4481319244150408807}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &4481319244150409113
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1487,7 +1334,6 @@ GameObject:
   - component: {fileID: 4481319244186665118}
   - component: {fileID: 4481319244186665117}
   - component: {fileID: 4481319244186665116}
-  - component: {fileID: 4481319244186665115}
   - component: {fileID: 4481319244186665114}
   m_Layer: 0
   m_Name: EmptyMapSlice (72)
@@ -1564,27 +1410,11 @@ MeshCollider:
   m_GameObject: {fileID: 4481319244186665112}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &4481319244186665115
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4481319244186665112}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &4481319244186665114
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1609,7 +1439,6 @@ GameObject:
   - component: {fileID: 4481319244187087662}
   - component: {fileID: 4481319244187087661}
   - component: {fileID: 4481319244187087660}
-  - component: {fileID: 4481319244187087659}
   - component: {fileID: 4481319244187087658}
   m_Layer: 0
   m_Name: EmptyMapSlice (47)
@@ -1686,27 +1515,11 @@ MeshCollider:
   m_GameObject: {fileID: 4481319244187087656}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &4481319244187087659
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4481319244187087656}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &4481319244187087658
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1811,7 +1624,6 @@ GameObject:
   - component: {fileID: 4481319244200391083}
   - component: {fileID: 4481319244200391082}
   - component: {fileID: 4481319244200391081}
-  - component: {fileID: 4481319244200391080}
   - component: {fileID: 4481319244200391095}
   m_Layer: 0
   m_Name: EmptyMapSlice (41)
@@ -1888,27 +1700,11 @@ MeshCollider:
   m_GameObject: {fileID: 4481319244200391093}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &4481319244200391080
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4481319244200391093}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &4481319244200391095
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1933,7 +1729,6 @@ GameObject:
   - component: {fileID: 4481319244202080628}
   - component: {fileID: 4481319244202080627}
   - component: {fileID: 4481319244202080626}
-  - component: {fileID: 4481319244202080625}
   - component: {fileID: 4481319244202080624}
   m_Layer: 0
   m_Name: EmptyMapSlice (6)
@@ -2010,27 +1805,11 @@ MeshCollider:
   m_GameObject: {fileID: 4481319244202080638}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &4481319244202080625
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4481319244202080638}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &4481319244202080624
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2055,7 +1834,6 @@ GameObject:
   - component: {fileID: 4481319244223698921}
   - component: {fileID: 4481319244223698920}
   - component: {fileID: 4481319244223698935}
-  - component: {fileID: 4481319244223698934}
   - component: {fileID: 4481319244223698933}
   m_Layer: 0
   m_Name: EmptyMapSlice (10)
@@ -2132,27 +1910,11 @@ MeshCollider:
   m_GameObject: {fileID: 4481319244223698931}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &4481319244223698934
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4481319244223698931}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &4481319244223698933
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2177,7 +1939,6 @@ GameObject:
   - component: {fileID: 4481319244308866948}
   - component: {fileID: 4481319244308866947}
   - component: {fileID: 4481319244308866946}
-  - component: {fileID: 4481319244308866945}
   - component: {fileID: 4481319244308866944}
   m_Layer: 0
   m_Name: EmptyMapSlice (44)
@@ -2254,27 +2015,11 @@ MeshCollider:
   m_GameObject: {fileID: 4481319244308866958}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &4481319244308866945
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4481319244308866958}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &4481319244308866944
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2299,7 +2044,6 @@ GameObject:
   - component: {fileID: 4481319244394350123}
   - component: {fileID: 4481319244394350122}
   - component: {fileID: 4481319244394350121}
-  - component: {fileID: 4481319244394350120}
   - component: {fileID: 4481319244394350135}
   m_Layer: 0
   m_Name: EmptyMapSlice (20)
@@ -2376,27 +2120,11 @@ MeshCollider:
   m_GameObject: {fileID: 4481319244394350133}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &4481319244394350120
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4481319244394350133}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &4481319244394350135
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2452,7 +2180,6 @@ GameObject:
   - component: {fileID: 4481319244413320732}
   - component: {fileID: 4481319244413320731}
   - component: {fileID: 4481319244413320730}
-  - component: {fileID: 4481319244413320729}
   - component: {fileID: 4481319244413320728}
   m_Layer: 0
   m_Name: EmptyMapSlice (77)
@@ -2529,27 +2256,11 @@ MeshCollider:
   m_GameObject: {fileID: 4481319244413320934}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &4481319244413320729
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4481319244413320934}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &4481319244413320728
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2654,7 +2365,6 @@ GameObject:
   - component: {fileID: 4481319244446137645}
   - component: {fileID: 4481319244446137644}
   - component: {fileID: 4481319244446137643}
-  - component: {fileID: 4481319244446137642}
   - component: {fileID: 4481319244446137641}
   m_Layer: 0
   m_Name: EmptyMapSlice (23)
@@ -2731,27 +2441,11 @@ MeshCollider:
   m_GameObject: {fileID: 4481319244446137655}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &4481319244446137642
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4481319244446137655}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &4481319244446137641
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2807,7 +2501,6 @@ GameObject:
   - component: {fileID: 4481319244480530722}
   - component: {fileID: 4481319244480530721}
   - component: {fileID: 4481319244480530720}
-  - component: {fileID: 4481319244480530735}
   - component: {fileID: 4481319244480530734}
   m_Layer: 0
   m_Name: EmptyMapSlice (43)
@@ -2884,27 +2577,11 @@ MeshCollider:
   m_GameObject: {fileID: 4481319244480530732}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &4481319244480530735
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4481319244480530732}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &4481319244480530734
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2929,7 +2606,6 @@ GameObject:
   - component: {fileID: 4481319244502203203}
   - component: {fileID: 4481319244502203202}
   - component: {fileID: 4481319244502203201}
-  - component: {fileID: 4481319244502203200}
   - component: {fileID: 4481319244502203215}
   m_Layer: 0
   m_Name: EmptyMapSlice (3)
@@ -3006,27 +2682,11 @@ MeshCollider:
   m_GameObject: {fileID: 4481319244502203213}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &4481319244502203200
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4481319244502203213}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &4481319244502203215
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3051,7 +2711,6 @@ GameObject:
   - component: {fileID: 4481319244527232783}
   - component: {fileID: 4481319244527232782}
   - component: {fileID: 4481319244527232781}
-  - component: {fileID: 4481319244527232780}
   - component: {fileID: 4481319244527232779}
   m_Layer: 0
   m_Name: EmptyMapSlice (1)
@@ -3128,27 +2787,11 @@ MeshCollider:
   m_GameObject: {fileID: 4481319244527232777}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &4481319244527232780
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4481319244527232777}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &4481319244527232779
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3173,7 +2816,6 @@ GameObject:
   - component: {fileID: 4481319244540449311}
   - component: {fileID: 4481319244540449310}
   - component: {fileID: 4481319244540449309}
-  - component: {fileID: 4481319244540449308}
   - component: {fileID: 4481319244540449307}
   m_Layer: 0
   m_Name: EmptyMapSlice (76)
@@ -3250,27 +2892,11 @@ MeshCollider:
   m_GameObject: {fileID: 4481319244540449305}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &4481319244540449308
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4481319244540449305}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &4481319244540449307
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3295,7 +2921,6 @@ GameObject:
   - component: {fileID: 4481319244553179756}
   - component: {fileID: 4481319244553179755}
   - component: {fileID: 4481319244553179754}
-  - component: {fileID: 4481319244553179753}
   - component: {fileID: 4481319244553179752}
   m_Layer: 0
   m_Name: EmptyMapSlice (8)
@@ -3372,27 +2997,11 @@ MeshCollider:
   m_GameObject: {fileID: 4481319244553179766}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &4481319244553179753
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4481319244553179766}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &4481319244553179752
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3448,7 +3057,6 @@ GameObject:
   - component: {fileID: 4481319244716362104}
   - component: {fileID: 4481319244716362055}
   - component: {fileID: 4481319244716362054}
-  - component: {fileID: 4481319244716362053}
   - component: {fileID: 4481319244716362052}
   m_Layer: 0
   m_Name: EmptyMapSlice (46)
@@ -3525,27 +3133,11 @@ MeshCollider:
   m_GameObject: {fileID: 4481319244716362050}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &4481319244716362053
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4481319244716362050}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &4481319244716362052
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3570,7 +3162,6 @@ GameObject:
   - component: {fileID: 4481319244768402029}
   - component: {fileID: 4481319244768402028}
   - component: {fileID: 4481319244768402027}
-  - component: {fileID: 4481319244768402026}
   - component: {fileID: 4481319244768402025}
   m_Layer: 0
   m_Name: EmptyMapSlice (51)
@@ -3647,27 +3238,11 @@ MeshCollider:
   m_GameObject: {fileID: 4481319244768402039}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &4481319244768402026
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4481319244768402039}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &4481319244768402025
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3803,7 +3378,6 @@ GameObject:
   - component: {fileID: 4481319244805357764}
   - component: {fileID: 4481319244805357763}
   - component: {fileID: 4481319244805357762}
-  - component: {fileID: 4481319244805357761}
   - component: {fileID: 4481319244805357760}
   m_Layer: 0
   m_Name: EmptyMapSlice (31)
@@ -3880,27 +3454,11 @@ MeshCollider:
   m_GameObject: {fileID: 4481319244805357774}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &4481319244805357761
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4481319244805357774}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &4481319244805357760
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3956,7 +3514,6 @@ GameObject:
   - component: {fileID: 4481319244843992247}
   - component: {fileID: 4481319244843992246}
   - component: {fileID: 4481319244843992245}
-  - component: {fileID: 4481319244843992244}
   - component: {fileID: 4481319244843992243}
   m_Layer: 0
   m_Name: EmptyMapSlice (42)
@@ -4033,27 +3590,11 @@ MeshCollider:
   m_GameObject: {fileID: 4481319244843992241}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &4481319244843992244
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4481319244843992241}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &4481319244843992243
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4078,7 +3619,6 @@ GameObject:
   - component: {fileID: 4481319244872327889}
   - component: {fileID: 4481319244872327888}
   - component: {fileID: 4481319244872327903}
-  - component: {fileID: 4481319244872327902}
   - component: {fileID: 4481319244872327901}
   m_Layer: 0
   m_Name: EmptyMapSlice (68)
@@ -4155,27 +3695,11 @@ MeshCollider:
   m_GameObject: {fileID: 4481319244872327899}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &4481319244872327902
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4481319244872327899}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &4481319244872327901
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4200,7 +3724,6 @@ GameObject:
   - component: {fileID: 4481319244882317864}
   - component: {fileID: 4481319244882317879}
   - component: {fileID: 4481319244882317878}
-  - component: {fileID: 4481319244882317877}
   - component: {fileID: 4481319244882317876}
   m_Layer: 0
   m_Name: EmptyMapSlice (18)
@@ -4277,27 +3800,11 @@ MeshCollider:
   m_GameObject: {fileID: 4481319244882317874}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &4481319244882317877
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4481319244882317874}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &4481319244882317876
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4322,7 +3829,6 @@ GameObject:
   - component: {fileID: 4481319244900667069}
   - component: {fileID: 4481319244900667068}
   - component: {fileID: 4481319244900667067}
-  - component: {fileID: 4481319244900667066}
   - component: {fileID: 4481319244900667065}
   m_Layer: 0
   m_Name: EmptyMapSlice (59)
@@ -4399,27 +3905,11 @@ MeshCollider:
   m_GameObject: {fileID: 4481319244900667015}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &4481319244900667066
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4481319244900667015}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &4481319244900667065
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4444,7 +3934,6 @@ GameObject:
   - component: {fileID: 4481319244904454273}
   - component: {fileID: 4481319244904454272}
   - component: {fileID: 4481319244904454287}
-  - component: {fileID: 4481319244904454286}
   - component: {fileID: 4481319244904454285}
   m_Layer: 0
   m_Name: EmptyMapSlice (45)
@@ -4521,27 +4010,11 @@ MeshCollider:
   m_GameObject: {fileID: 4481319244904454283}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &4481319244904454286
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4481319244904454283}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &4481319244904454285
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4566,7 +4039,6 @@ GameObject:
   - component: {fileID: 4481319244909458111}
   - component: {fileID: 4481319244909458110}
   - component: {fileID: 4481319244909458109}
-  - component: {fileID: 4481319244909458108}
   - component: {fileID: 4481319244909458107}
   m_Layer: 0
   m_Name: EmptyMapSlice (12)
@@ -4643,27 +4115,11 @@ MeshCollider:
   m_GameObject: {fileID: 4481319244909458105}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &4481319244909458108
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4481319244909458105}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &4481319244909458107
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4688,7 +4144,6 @@ GameObject:
   - component: {fileID: 4481319244910335403}
   - component: {fileID: 4481319244910335402}
   - component: {fileID: 4481319244910335401}
-  - component: {fileID: 4481319244910335400}
   - component: {fileID: 4481319244910335415}
   m_Layer: 0
   m_Name: EmptyMapSlice (28)
@@ -4765,27 +4220,11 @@ MeshCollider:
   m_GameObject: {fileID: 4481319244910335413}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &4481319244910335400
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4481319244910335413}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &4481319244910335415
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4810,7 +4249,6 @@ GameObject:
   - component: {fileID: 4481319244938286115}
   - component: {fileID: 4481319244938286114}
   - component: {fileID: 4481319244938286113}
-  - component: {fileID: 4481319244938286112}
   - component: {fileID: 4481319244938286127}
   m_Layer: 0
   m_Name: EmptyMapSlice (21)
@@ -4887,27 +4325,11 @@ MeshCollider:
   m_GameObject: {fileID: 4481319244938286125}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &4481319244938286112
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4481319244938286125}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &4481319244938286127
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4932,7 +4354,6 @@ GameObject:
   - component: {fileID: 4481319244952718104}
   - component: {fileID: 4481319244952718311}
   - component: {fileID: 4481319244952718310}
-  - component: {fileID: 4481319244952718309}
   - component: {fileID: 4481319244952718308}
   m_Layer: 0
   m_Name: EmptyMapSlice (5)
@@ -5009,27 +4430,11 @@ MeshCollider:
   m_GameObject: {fileID: 4481319244952718306}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &4481319244952718309
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4481319244952718306}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &4481319244952718308
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5054,7 +4459,6 @@ GameObject:
   - component: {fileID: 4481319244964267561}
   - component: {fileID: 4481319244964267560}
   - component: {fileID: 4481319244964267575}
-  - component: {fileID: 4481319244964267574}
   - component: {fileID: 4481319244964267573}
   m_Layer: 0
   m_Name: EmptyMapSlice (70)
@@ -5131,27 +4535,11 @@ MeshCollider:
   m_GameObject: {fileID: 4481319244964267571}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &4481319244964267574
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4481319244964267571}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &4481319244964267573
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5176,7 +4564,6 @@ GameObject:
   - component: {fileID: 4481319245007244175}
   - component: {fileID: 4481319245007244174}
   - component: {fileID: 4481319245007244173}
-  - component: {fileID: 4481319245007244172}
   - component: {fileID: 4481319245007244171}
   m_Layer: 0
   m_Name: EmptyMapSlice (13)
@@ -5253,27 +4640,11 @@ MeshCollider:
   m_GameObject: {fileID: 4481319245007244169}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &4481319245007244172
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4481319245007244169}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &4481319245007244171
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5298,7 +4669,6 @@ GameObject:
   - component: {fileID: 4481319245011408142}
   - component: {fileID: 4481319245011408141}
   - component: {fileID: 4481319245011408140}
-  - component: {fileID: 4481319245011408139}
   - component: {fileID: 4481319245011408138}
   m_Layer: 0
   m_Name: EmptyMapSlice (37)
@@ -5375,27 +4745,11 @@ MeshCollider:
   m_GameObject: {fileID: 4481319245011408136}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &4481319245011408139
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4481319245011408136}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &4481319245011408138
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5420,7 +4774,6 @@ GameObject:
   - component: {fileID: 4481319245102532084}
   - component: {fileID: 4481319245102532083}
   - component: {fileID: 4481319245102532082}
-  - component: {fileID: 4481319245102532081}
   - component: {fileID: 4481319245102532080}
   m_Layer: 0
   m_Name: EmptyMapSlice (71)
@@ -5497,27 +4850,11 @@ MeshCollider:
   m_GameObject: {fileID: 4481319245102532094}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &4481319245102532081
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4481319245102532094}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &4481319245102532080
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5542,7 +4879,6 @@ GameObject:
   - component: {fileID: 4481319245118645260}
   - component: {fileID: 4481319245118645259}
   - component: {fileID: 4481319245118645258}
-  - component: {fileID: 4481319245118645257}
   - component: {fileID: 4481319245118645256}
   m_Layer: 0
   m_Name: EmptyMapSlice (33)
@@ -5619,27 +4955,11 @@ MeshCollider:
   m_GameObject: {fileID: 4481319245118645270}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &4481319245118645257
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4481319245118645270}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &4481319245118645256
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5664,7 +4984,6 @@ GameObject:
   - component: {fileID: 4481319245169163820}
   - component: {fileID: 4481319245169163819}
   - component: {fileID: 4481319245169163818}
-  - component: {fileID: 4481319245169163817}
   - component: {fileID: 4481319245169163816}
   m_Layer: 0
   m_Name: EmptyMapSlice (30)
@@ -5741,27 +5060,11 @@ MeshCollider:
   m_GameObject: {fileID: 4481319245169163830}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &4481319245169163817
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4481319245169163830}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &4481319245169163816
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5786,7 +5089,6 @@ GameObject:
   - component: {fileID: 4481319245171428099}
   - component: {fileID: 4481319245171428098}
   - component: {fileID: 4481319245171428097}
-  - component: {fileID: 4481319245171428096}
   - component: {fileID: 4481319245171428111}
   m_Layer: 0
   m_Name: EmptyMapSlice (17)
@@ -5863,27 +5165,11 @@ MeshCollider:
   m_GameObject: {fileID: 4481319245171428109}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &4481319245171428096
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4481319245171428109}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &4481319245171428111
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5908,7 +5194,6 @@ GameObject:
   - component: {fileID: 4481319245191485700}
   - component: {fileID: 4481319245191485699}
   - component: {fileID: 4481319245191485698}
-  - component: {fileID: 4481319245191485697}
   - component: {fileID: 4481319245191485696}
   m_Layer: 0
   m_Name: EmptyMapSlice (50)
@@ -5985,27 +5270,11 @@ MeshCollider:
   m_GameObject: {fileID: 4481319245191485710}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &4481319245191485697
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4481319245191485710}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &4481319245191485696
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6030,7 +5299,6 @@ GameObject:
   - component: {fileID: 4481319245262454621}
   - component: {fileID: 4481319245262454620}
   - component: {fileID: 4481319245262454619}
-  - component: {fileID: 4481319245262454618}
   - component: {fileID: 4481319245262454617}
   m_Layer: 0
   m_Name: EmptyMapSlice (66)
@@ -6107,27 +5375,11 @@ MeshCollider:
   m_GameObject: {fileID: 4481319245262454567}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &4481319245262454618
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4481319245262454567}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &4481319245262454617
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6152,7 +5404,6 @@ GameObject:
   - component: {fileID: 4481319245270645527}
   - component: {fileID: 4481319245270645526}
   - component: {fileID: 4481319245270645525}
-  - component: {fileID: 4481319245270645524}
   - component: {fileID: 4481319245270645523}
   m_Layer: 0
   m_Name: EmptyMapSlice (55)
@@ -6229,27 +5480,11 @@ MeshCollider:
   m_GameObject: {fileID: 4481319245270645521}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &4481319245270645524
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4481319245270645521}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &4481319245270645523
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6274,7 +5509,6 @@ GameObject:
   - component: {fileID: 4481319245385689619}
   - component: {fileID: 4481319245385689618}
   - component: {fileID: 4481319245385689617}
-  - component: {fileID: 4481319245385689616}
   - component: {fileID: 4481319245385689631}
   m_Layer: 0
   m_Name: EmptyMapSlice (52)
@@ -6351,27 +5585,11 @@ MeshCollider:
   m_GameObject: {fileID: 4481319245385689629}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &4481319245385689616
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4481319245385689629}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &4481319245385689631
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6396,7 +5614,6 @@ GameObject:
   - component: {fileID: 4481319245388880148}
   - component: {fileID: 4481319245388880147}
   - component: {fileID: 4481319245388880146}
-  - component: {fileID: 4481319245388880145}
   - component: {fileID: 4481319245388880144}
   m_Layer: 0
   m_Name: EmptyMapSlice (27)
@@ -6473,27 +5690,11 @@ MeshCollider:
   m_GameObject: {fileID: 4481319245388880158}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &4481319245388880145
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4481319245388880158}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &4481319245388880144
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6549,7 +5750,6 @@ GameObject:
   - component: {fileID: 4481319245431666939}
   - component: {fileID: 4481319245431666938}
   - component: {fileID: 4481319245431666937}
-  - component: {fileID: 4481319245431666936}
   - component: {fileID: 4481319245431666887}
   m_Layer: 0
   m_Name: EmptyMapSlice (48)
@@ -6626,27 +5826,11 @@ MeshCollider:
   m_GameObject: {fileID: 4481319245431666885}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &4481319245431666936
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4481319245431666885}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &4481319245431666887
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6782,7 +5966,6 @@ GameObject:
   - component: {fileID: 4481319245487365312}
   - component: {fileID: 4481319245487365327}
   - component: {fileID: 4481319245487365326}
-  - component: {fileID: 4481319245487365325}
   - component: {fileID: 4481319245487365324}
   m_Layer: 0
   m_Name: EmptyMapSlice (63)
@@ -6859,27 +6042,11 @@ MeshCollider:
   m_GameObject: {fileID: 4481319245487365322}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &4481319245487365325
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4481319245487365322}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &4481319245487365324
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6904,7 +6071,6 @@ GameObject:
   - component: {fileID: 4481319245504671160}
   - component: {fileID: 4481319245504671111}
   - component: {fileID: 4481319245504671110}
-  - component: {fileID: 4481319245504671109}
   - component: {fileID: 4481319245504671108}
   m_Layer: 0
   m_Name: EmptyMapSlice (64)
@@ -6981,27 +6147,11 @@ MeshCollider:
   m_GameObject: {fileID: 4481319245504671106}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &4481319245504671109
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4481319245504671106}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &4481319245504671108
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7026,7 +6176,6 @@ GameObject:
   - component: {fileID: 4481319245521430259}
   - component: {fileID: 4481319245521430258}
   - component: {fileID: 4481319245521430257}
-  - component: {fileID: 4481319245521430256}
   - component: {fileID: 4481319245521430271}
   m_Layer: 0
   m_Name: EmptyMapSlice (58)
@@ -7103,27 +6252,11 @@ MeshCollider:
   m_GameObject: {fileID: 4481319245521430269}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &4481319245521430256
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4481319245521430269}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &4481319245521430271
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7148,7 +6281,6 @@ GameObject:
   - component: {fileID: 4481319245533560843}
   - component: {fileID: 4481319245533560842}
   - component: {fileID: 4481319245533560841}
-  - component: {fileID: 4481319245533560840}
   - component: {fileID: 4481319245533560855}
   m_Layer: 0
   m_Name: EmptyMapSlice (36)
@@ -7225,27 +6357,11 @@ MeshCollider:
   m_GameObject: {fileID: 4481319245533560853}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &4481319245533560840
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4481319245533560853}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &4481319245533560855
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7270,7 +6386,6 @@ GameObject:
   - component: {fileID: 4481319245548656908}
   - component: {fileID: 4481319245548656907}
   - component: {fileID: 4481319245548656906}
-  - component: {fileID: 4481319245548656905}
   - component: {fileID: 4481319245548656904}
   m_Layer: 0
   m_Name: EmptyMapSlice (34)
@@ -7347,27 +6462,11 @@ MeshCollider:
   m_GameObject: {fileID: 4481319245548656918}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &4481319245548656905
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4481319245548656918}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &4481319245548656904
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7423,7 +6522,6 @@ GameObject:
   - component: {fileID: 4481319245564179294}
   - component: {fileID: 4481319245564179293}
   - component: {fileID: 4481319245564179292}
-  - component: {fileID: 4481319245564179291}
   - component: {fileID: 4481319245564179290}
   m_Layer: 0
   m_Name: EmptyMapSlice (65)
@@ -7500,27 +6598,11 @@ MeshCollider:
   m_GameObject: {fileID: 4481319245564179288}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &4481319245564179291
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4481319245564179288}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &4481319245564179290
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7545,7 +6627,6 @@ GameObject:
   - component: {fileID: 4481319245565950982}
   - component: {fileID: 4481319245565950981}
   - component: {fileID: 4481319245565950980}
-  - component: {fileID: 4481319245565950979}
   - component: {fileID: 4481319245565950978}
   m_Layer: 0
   m_Name: EmptyMapSlice (49)
@@ -7622,27 +6703,11 @@ MeshCollider:
   m_GameObject: {fileID: 4481319245565950976}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &4481319245565950979
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4481319245565950976}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &4481319245565950978
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7667,7 +6732,6 @@ GameObject:
   - component: {fileID: 4481319245582601633}
   - component: {fileID: 4481319245582601632}
   - component: {fileID: 4481319245582601647}
-  - component: {fileID: 4481319245582601646}
   - component: {fileID: 4481319245582601645}
   m_Layer: 0
   m_Name: EmptyMapSlice (11)
@@ -7744,27 +6808,11 @@ MeshCollider:
   m_GameObject: {fileID: 4481319245582601643}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &4481319245582601646
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4481319245582601643}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &4481319245582601645
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7789,7 +6837,6 @@ GameObject:
   - component: {fileID: 4481319245591561143}
   - component: {fileID: 4481319245591561142}
   - component: {fileID: 4481319245591561141}
-  - component: {fileID: 4481319245591561140}
   - component: {fileID: 4481319245591561139}
   m_Layer: 0
   m_Name: EmptyMapSlice (38)
@@ -7866,27 +6913,11 @@ MeshCollider:
   m_GameObject: {fileID: 4481319245591561137}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &4481319245591561140
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4481319245591561137}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &4481319245591561139
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7911,7 +6942,6 @@ GameObject:
   - component: {fileID: 4481319245618147031}
   - component: {fileID: 4481319245618147030}
   - component: {fileID: 4481319245618147029}
-  - component: {fileID: 4481319245618147028}
   - component: {fileID: 4481319245618147027}
   m_Layer: 0
   m_Name: EmptyMapSlice (32)
@@ -7988,27 +7018,11 @@ MeshCollider:
   m_GameObject: {fileID: 4481319245618147025}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &4481319245618147028
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4481319245618147025}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &4481319245618147027
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8033,7 +7047,6 @@ GameObject:
   - component: {fileID: 4481319245650930917}
   - component: {fileID: 4481319245650930916}
   - component: {fileID: 4481319245650930915}
-  - component: {fileID: 4481319245650930914}
   - component: {fileID: 4481319245650930913}
   m_Layer: 0
   m_Name: EmptyMapSlice (61)
@@ -8110,27 +7123,11 @@ MeshCollider:
   m_GameObject: {fileID: 4481319245650930927}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &4481319245650930914
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4481319245650930927}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &4481319245650930913
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8155,7 +7152,6 @@ GameObject:
   - component: {fileID: 4481319245662486133}
   - component: {fileID: 4481319245662486132}
   - component: {fileID: 4481319245662486131}
-  - component: {fileID: 4481319245662486130}
   - component: {fileID: 4481319245662486129}
   m_Layer: 0
   m_Name: EmptyMapSlice (67)
@@ -8232,27 +7228,11 @@ MeshCollider:
   m_GameObject: {fileID: 4481319245662486143}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &4481319245662486130
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4481319245662486143}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &4481319245662486129
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8277,7 +7257,6 @@ GameObject:
   - component: {fileID: 4481319245672169306}
   - component: {fileID: 4481319245672169305}
   - component: {fileID: 4481319245672169304}
-  - component: {fileID: 4481319245672169255}
   - component: {fileID: 4481319245672169254}
   m_Layer: 0
   m_Name: EmptyMapSlice (75)
@@ -8354,27 +7333,11 @@ MeshCollider:
   m_GameObject: {fileID: 4481319245672169252}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &4481319245672169255
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4481319245672169252}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &4481319245672169254
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8399,7 +7362,6 @@ GameObject:
   - component: {fileID: 4481319245730888460}
   - component: {fileID: 4481319245730888459}
   - component: {fileID: 4481319245730888458}
-  - component: {fileID: 4481319245730888457}
   - component: {fileID: 4481319245730888456}
   m_Layer: 0
   m_Name: EmptyMapSlice (62)
@@ -8476,27 +7438,11 @@ MeshCollider:
   m_GameObject: {fileID: 4481319245730888470}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &4481319245730888457
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4481319245730888470}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &4481319245730888456
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8521,7 +7467,6 @@ GameObject:
   - component: {fileID: 4481319245748614549}
   - component: {fileID: 4481319245748614548}
   - component: {fileID: 4481319245748614547}
-  - component: {fileID: 4481319245748614546}
   - component: {fileID: 4481319245748614545}
   m_Layer: 0
   m_Name: EmptyMapSlice (40)
@@ -8598,27 +7543,11 @@ MeshCollider:
   m_GameObject: {fileID: 4481319245748614559}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &4481319245748614546
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4481319245748614559}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &4481319245748614545
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8723,7 +7652,6 @@ GameObject:
   - component: {fileID: 4481319245818670092}
   - component: {fileID: 4481319245818670091}
   - component: {fileID: 4481319245818670090}
-  - component: {fileID: 4481319245818670089}
   - component: {fileID: 4481319245818670088}
   m_Layer: 0
   m_Name: EmptyMapSlice (69)
@@ -8800,27 +7728,11 @@ MeshCollider:
   m_GameObject: {fileID: 4481319245818670102}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &4481319245818670089
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4481319245818670102}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &4481319245818670088
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8845,7 +7757,6 @@ GameObject:
   - component: {fileID: 4481319245823438235}
   - component: {fileID: 4481319245823438234}
   - component: {fileID: 4481319245823438233}
-  - component: {fileID: 4481319245823438232}
   - component: {fileID: 4481319245823437927}
   m_Layer: 0
   m_Name: EmptyMapSlice (57)
@@ -8922,27 +7833,11 @@ MeshCollider:
   m_GameObject: {fileID: 4481319245823437925}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &4481319245823438232
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4481319245823437925}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &4481319245823437927
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8967,7 +7862,6 @@ GameObject:
   - component: {fileID: 4481319245833452599}
   - component: {fileID: 4481319245833452598}
   - component: {fileID: 4481319245833452597}
-  - component: {fileID: 4481319245833452596}
   - component: {fileID: 4481319245833452595}
   m_Layer: 0
   m_Name: EmptyMapSlice (9)
@@ -9044,27 +7938,11 @@ MeshCollider:
   m_GameObject: {fileID: 4481319245833452593}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &4481319245833452596
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4481319245833452593}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &4481319245833452595
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9089,7 +7967,6 @@ GameObject:
   - component: {fileID: 4481319245834623339}
   - component: {fileID: 4481319245834623338}
   - component: {fileID: 4481319245834623337}
-  - component: {fileID: 4481319245834623336}
   - component: {fileID: 4481319245834623351}
   m_Layer: 0
   m_Name: EmptyMapSlice (15)
@@ -9166,27 +8043,11 @@ MeshCollider:
   m_GameObject: {fileID: 4481319245834623349}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &4481319245834623336
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4481319245834623349}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &4481319245834623351
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9211,7 +8072,6 @@ GameObject:
   - component: {fileID: 4481319245835791616}
   - component: {fileID: 4481319245835791631}
   - component: {fileID: 4481319245835791630}
-  - component: {fileID: 4481319245835791629}
   - component: {fileID: 4481319245835791628}
   m_Layer: 0
   m_Name: EmptyMapSlice (29)
@@ -9288,27 +8148,11 @@ MeshCollider:
   m_GameObject: {fileID: 4481319245835791626}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &4481319245835791629
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4481319245835791626}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &4481319245835791628
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9333,7 +8177,6 @@ GameObject:
   - component: {fileID: 4481319245930678515}
   - component: {fileID: 4481319245930678514}
   - component: {fileID: 4481319245930678513}
-  - component: {fileID: 4481319245930678512}
   - component: {fileID: 4481319245930678527}
   m_Layer: 0
   m_Name: EmptyMapSlice (7)
@@ -9410,27 +8253,11 @@ MeshCollider:
   m_GameObject: {fileID: 4481319245930678525}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &4481319245930678512
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4481319245930678525}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &4481319245930678527
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9455,7 +8282,6 @@ GameObject:
   - component: {fileID: 4481319245948928993}
   - component: {fileID: 4481319245948928992}
   - component: {fileID: 4481319245948929007}
-  - component: {fileID: 4481319245948929006}
   - component: {fileID: 4481319245948929005}
   m_Layer: 0
   m_Name: EmptyMapSlice (25)
@@ -9532,27 +8358,11 @@ MeshCollider:
   m_GameObject: {fileID: 4481319245948929003}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &4481319245948929006
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4481319245948929003}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &4481319245948929005
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9577,7 +8387,6 @@ GameObject:
   - component: {fileID: 4481319245952585493}
   - component: {fileID: 4481319245952585492}
   - component: {fileID: 4481319245952585491}
-  - component: {fileID: 4481319245952585490}
   - component: {fileID: 4481319245952585489}
   m_Layer: 0
   m_Name: EmptyMapSlice (39)
@@ -9654,27 +8463,11 @@ MeshCollider:
   m_GameObject: {fileID: 4481319245952585503}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &4481319245952585490
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4481319245952585503}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &4481319245952585489
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9699,7 +8492,6 @@ GameObject:
   - component: {fileID: 4481319246023913441}
   - component: {fileID: 4481319246023913440}
   - component: {fileID: 4481319246023913455}
-  - component: {fileID: 4481319246023913454}
   - component: {fileID: 4481319246023913453}
   m_Layer: 0
   m_Name: EmptyMapSlice (19)
@@ -9776,27 +8568,11 @@ MeshCollider:
   m_GameObject: {fileID: 4481319246023913451}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &4481319246023913454
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4481319246023913451}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &4481319246023913453
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9821,7 +8597,6 @@ GameObject:
   - component: {fileID: 4481319246036803227}
   - component: {fileID: 4481319246036803226}
   - component: {fileID: 4481319246036803225}
-  - component: {fileID: 4481319246036803224}
   - component: {fileID: 4481319246036802919}
   m_Layer: 0
   m_Name: EmptyMapSlice (53)
@@ -9898,27 +8673,11 @@ MeshCollider:
   m_GameObject: {fileID: 4481319246036802917}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &4481319246036803224
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4481319246036802917}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &4481319246036802919
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9943,7 +8702,6 @@ GameObject:
   - component: {fileID: 4481319246074394270}
   - component: {fileID: 4481319246074394269}
   - component: {fileID: 4481319246074394268}
-  - component: {fileID: 4481319246074394267}
   - component: {fileID: 4481319246074394266}
   m_Layer: 0
   m_Name: EmptyMapSlice (26)
@@ -10020,27 +8778,11 @@ MeshCollider:
   m_GameObject: {fileID: 4481319246074394264}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &4481319246074394267
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4481319246074394264}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &4481319246074394266
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10145,7 +8887,6 @@ GameObject:
   - component: {fileID: 4481319246091366638}
   - component: {fileID: 4481319246091366637}
   - component: {fileID: 4481319246091366636}
-  - component: {fileID: 4481319246091366635}
   - component: {fileID: 4481319246091366634}
   m_Layer: 0
   m_Name: EmptyMapSlice (2)
@@ -10222,27 +8963,11 @@ MeshCollider:
   m_GameObject: {fileID: 4481319246091366632}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &4481319246091366635
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4481319246091366632}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &4481319246091366634
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10267,7 +8992,6 @@ GameObject:
   - component: {fileID: 4481319246106653984}
   - component: {fileID: 4481319246106653999}
   - component: {fileID: 4481319246106653998}
-  - component: {fileID: 4481319246106653997}
   - component: {fileID: 4481319246106653996}
   m_Layer: 0
   m_Name: EmptyMapSlice (73)
@@ -10344,27 +9068,11 @@ MeshCollider:
   m_GameObject: {fileID: 4481319246106653994}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &4481319246106653997
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4481319246106653994}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &4481319246106653996
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10389,7 +9097,6 @@ GameObject:
   - component: {fileID: 4481319246123321355}
   - component: {fileID: 4481319246123321354}
   - component: {fileID: 4481319246123321353}
-  - component: {fileID: 4481319246123321352}
   - component: {fileID: 4481319246123321367}
   m_Layer: 0
   m_Name: EmptyMapSlice (60)
@@ -10466,27 +9173,11 @@ MeshCollider:
   m_GameObject: {fileID: 4481319246123321365}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &4481319246123321352
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4481319246123321365}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &4481319246123321367
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10511,7 +9202,6 @@ GameObject:
   - component: {fileID: 4481319246142190787}
   - component: {fileID: 4481319246142190786}
   - component: {fileID: 4481319246142190785}
-  - component: {fileID: 4481319246142190784}
   - component: {fileID: 4481319246142190799}
   m_Layer: 0
   m_Name: EmptyMapSlice (35)
@@ -10588,27 +9278,11 @@ MeshCollider:
   m_GameObject: {fileID: 4481319246142190797}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &4481319246142190784
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4481319246142190797}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &4481319246142190799
 MonoBehaviour:
   m_ObjectHideFlags: 0
