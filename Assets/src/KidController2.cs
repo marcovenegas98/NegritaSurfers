@@ -30,7 +30,7 @@ public class KidController2 : MonoBehaviour
 	private float t;
 	private float startPosition;
 	private float target;
-    private float terrainSpeedAugmentationFactor = 0.2f;
+    private float terrainSpeedAugmentationFactor = 0.25f;
 	public float jumpMultiplier;
 	public float descentMultiplier;
 
