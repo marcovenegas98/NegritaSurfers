@@ -88,7 +88,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 237419792085459730}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -113,6 +113,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 237419792085459742}
     m_Modifications:
+    - target: {fileID: 1965851562501010, guid: e82139b3bae6212439ea1e85ad29678b, type: 3}
+      propertyPath: m_Name
+      value: SheepWhite
+      objectReference: {fileID: 0}
     - target: {fileID: 4589997030424458, guid: e82139b3bae6212439ea1e85ad29678b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -168,10 +172,6 @@ PrefabInstance:
     - target: {fileID: 4589997030424458, guid: e82139b3bae6212439ea1e85ad29678b, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.7940001
-      objectReference: {fileID: 0}
-    - target: {fileID: 1965851562501010, guid: e82139b3bae6212439ea1e85ad29678b, type: 3}
-      propertyPath: m_Name
-      value: SheepWhite
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e82139b3bae6212439ea1e85ad29678b, type: 3}
