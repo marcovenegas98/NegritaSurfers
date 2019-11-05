@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class KidController2 : MonoBehaviour
 {
@@ -23,13 +24,12 @@ public class KidController2 : MonoBehaviour
 
     private TracksEnum currentTrack = TracksEnum.MIDDLE;
 	private int btwnTrackDistance = 10;
-	private float extraGravity = 9.8f;
     private KidState kidState;
 	private Rigidbody rigidBody;
 	private float t;
 	private float startPosition;
 	private float target;
-    private float terrainSpeedAugmentationFactor = 0.2f;
+    private float terrainSpeedAugmentationFactor = 0.5f;
 	public float jumpMultiplier;
 	public float descentMultiplier;
 
@@ -60,27 +60,30 @@ public class KidController2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-    	//Jumping
-        if(kidState.isGoingUp){
-            goUp();
-        }else if (kidState.isGrounded && Input.GetAxis("Vertical") > 0){
-            kidState.isGoingUp = true;
-            goUp();
-        }else if(!kidState.isGrounded){
-            goDown();
-        }
+        if (kidState.isAlive)
+        {
+    	    //Jumping
+            if(kidState.isGoingUp){
+                goUp();
+            }else if (kidState.isGrounded && Input.GetAxis("Vertical") > 0){
+                kidState.isGoingUp = true;
+                goUp();
+            }else if(!kidState.isGrounded){
+                goDown();
+            }
 
-    	if(kidState.isMoving && (transform.position.x != target)){ //Move to the target
-    		t += Time.deltaTime/timeSwitchingTracks; 
-        	transform.position = new Vector3(Mathf.Lerp(startPosition, target, t), transform.position.y, transform.position.z);
-    	}else{ //If not moving
-    		kidState.isMoving = false;
-    		//Receive input and determine if should change tracks
-	    	float direction = Input.GetAxis("Horizontal");
-	        if(direction != 0){
-	        	changeTrack(direction);
-	        }
-    	}
+    	    if(kidState.isMoving && (transform.position.x != target)){ //Move to the target
+    		    t += Time.deltaTime/timeSwitchingTracks; 
+        	    transform.position = new Vector3(Mathf.Lerp(startPosition, target, t), transform.position.y, transform.position.z);
+    	    }else{ //If not moving
+    		    kidState.isMoving = false;
+    		    //Receive input and determine if should change tracks
+	    	    float direction = Input.GetAxis("Horizontal");
+	            if(direction != 0){
+	        	    changeTrack(direction);
+	            }
+    	    }
+        }
     }
 
     //true = right, false = left
@@ -135,7 +138,7 @@ public class KidController2 : MonoBehaviour
 		switch(other.gameObject.tag){
 			case "Ground" : {
                 if(!kidState.isGrounded){
-                    Terrain.speed -= 0.5f;
+                    Terrain.speed -= terrainSpeedAugmentationFactor;
                 }
 	        	kidState.isGrounded = true;
 			}break;
@@ -151,7 +154,7 @@ public class KidController2 : MonoBehaviour
 		switch(other.gameObject.tag){
 			case "Ground" : {
 	        	kidState.isGrounded = false;
-                Terrain.speed += 0.5f;
+                Terrain.speed += terrainSpeedAugmentationFactor;
 			}break;
 		}
 	}
@@ -167,4 +170,47 @@ public class KidController2 : MonoBehaviour
 		pos.y -= descentMultiplier;
 		transform.position = pos;
 	}
+
+	void OnTriggerEnter(Collider other)
+	{
+		// Debug.Log("Trigger with " +  other.name + " tagged " + other.tag );
+
+		var obs = other.GetComponent<Obstacle>();
+		if (obs) {
+			Debug.Log("Other is Obstacle");
+			ObstacleHit(obs);
+		}
+	}
+
+	/// <summary>
+	/// Handles logic/animation when hitting an obstacle
+	/// </summary>
+	void ObstacleHit(Obstacle other)
+	{
+        if (this.kidState.isAlive)
+        {
+            Destroy(this.transform.Find("Character").gameObject);
+            this.kidState.isAlive = false;
+            GetComponent<Collider>().enabled = false;
+            UpdateUIGameOverText();
+        }
+	}
+
+    private void UpdateUIGameOverText()
+    {
+        var canvas = GameObject.FindGameObjectWithTag("Canvas");
+        if (canvas)
+        {
+            List<Text> texts = new List<Text>();
+            canvas.GetComponentsInChildren<Text>(texts);
+            foreach (Text text in texts)
+            {
+                if (text.name == "GameOverText")
+                {
+                    text.text = "GAME OVER";
+                    break;
+                }
+            }
+        }
+    }
 }

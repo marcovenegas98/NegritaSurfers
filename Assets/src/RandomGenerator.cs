@@ -5,6 +5,7 @@ using UnityEngine;
 public class RandomGenerator : MonoBehaviour
 {
     public GameObject l1_1;
+    public GameObject l1_2;
     public GameObject l2_1;
     private List<GameObject> levelsList = new List<GameObject>();
     private static int TOTAL_CHUNKS_PER_LEVEL = 3;
@@ -20,6 +21,7 @@ public class RandomGenerator : MonoBehaviour
 
         // filling the list
         this.levelsList.Add(l1_1);
+        this.levelsList.Add(l1_2);
         this.levelsList.Add(l2_1);
 
         Quaternion quat = new Quaternion(0,0,0,1);
@@ -29,7 +31,7 @@ public class RandomGenerator : MonoBehaviour
             listLeftLimit = Mathf.RoundToInt(Mathf.Floor(index / TOTAL_CHUNKS_PER_LEVEL) * TOTAL_PREFABS_PER_LEVEL);
             listRightLimit = listLeftLimit + TOTAL_PREFABS_PER_LEVEL;
             nextInt = Random.Range(listLeftLimit, listRightLimit);
-            Instantiate(levelsList[nextInt], new Vector3(80, 0, (253 + 250 * index)), quat);
+            Instantiate(levelsList[nextInt], new Vector3(10, -0.5f, (253 + 250 * index)), quat);
         }
     }
 
