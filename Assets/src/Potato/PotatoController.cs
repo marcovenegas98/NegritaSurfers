@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PotatoController : MonoBehaviour
 {
@@ -43,35 +44,52 @@ public class PotatoController : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
-        TotalPotatoes++;
         var player = other.GetComponent<KidController2>();
         if (player)
         {
-            this.transform.parent = other.transform.transform;
-            var kiddo = other.transform.Find("Character");
-            if (kiddo)
-            {
-                var newPos = kiddo.transform.localPosition;
-                newPos[1] += 1.2f;
-                localYPos = newPos[1];
-                transform.localPosition = newPos;
-                Debug.Log("Found Kiddo");
-            } else
-            {
-                var newPos = transform.position;
-                newPos[1] += 1.5f;
-                transform.position = newPos;
-            }
-            isCollected = true;
-            //StartCoroutine("CollectCoroutine");
-            Debug.Log($"Score: {TotalPotatoes}");
+            CollectPotato(player);
+            UpdateUIScore();
         }
     }
 
-    private IEnumerable CollectCoroutine()
+    private void CollectPotato(KidController2 player)
     {
-        Debug.Log("Started Collect");
-        yield return new WaitForSeconds(hoverCollectTime);
-        Debug.Log("Finished Collect");
+        TotalPotatoes++;
+        this.transform.parent = player.transform.transform;
+        var kiddo = player.transform.Find("Character");
+        if (kiddo)
+        {
+            var newPos = kiddo.transform.localPosition;
+            newPos[1] += 1.2f;
+            localYPos = newPos[1];
+            transform.localPosition = newPos;
+            Debug.Log("Found Kiddo");
+        }
+        else
+        {
+            var newPos = transform.position;
+            newPos[1] += 1.5f;
+            transform.position = newPos;
+        }
+        isCollected = true;
+    }
+
+    private void UpdateUIScore()
+    {
+        var canvas = GameObject.FindGameObjectWithTag("Canvas");
+        if (canvas)
+        {
+            List<Text> texts = new List<Text>();
+            canvas.GetComponentsInChildren<Text>(texts);
+            foreach (Text text in texts)
+            {
+                if (text.name == "PotatoText")
+                {
+                    text.text = $"Papas recolectadas: {TotalPotatoes}";
+                    break;
+                }
+            }
+        }
+
     }
 }

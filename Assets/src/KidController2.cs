@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class KidController2 : MonoBehaviour
 {
@@ -192,6 +193,25 @@ public class KidController2 : MonoBehaviour
             Destroy(this.transform.Find("Character").gameObject);
             this.kidState.isAlive = false;
             GetComponent<Collider>().enabled = false;
+            UpdateUIGameOverText();
         }
 	}
+
+    private void UpdateUIGameOverText()
+    {
+        var canvas = GameObject.FindGameObjectWithTag("Canvas");
+        if (canvas)
+        {
+            List<Text> texts = new List<Text>();
+            canvas.GetComponentsInChildren<Text>(texts);
+            foreach (Text text in texts)
+            {
+                if (text.name == "GameOverText")
+                {
+                    text.text = "GAME OVER";
+                    break;
+                }
+            }
+        }
+    }
 }
