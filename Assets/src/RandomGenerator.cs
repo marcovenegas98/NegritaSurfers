@@ -4,12 +4,9 @@ using UnityEngine;
 
 public class RandomGenerator : MonoBehaviour
 {
-    public GameObject l1_1;
-    public GameObject l1_2;
-    public GameObject l2_1;
-    private List<GameObject> levelsList = new List<GameObject>();
-    private static int TOTAL_CHUNKS_PER_LEVEL = 3;
-    private static int LEVELS = 2;
+    public List<GameObject> levelsList;
+    private static int TOTAL_CHUNKS_PER_LEVEL = 8; //2 chunks per dev, per level
+    private static int LEVELS = 3;
     private static int TOTAL_CHUNKS = LEVELS * TOTAL_CHUNKS_PER_LEVEL;
     private static int TOTAL_PREFABS_PER_LEVEL = 1;
 
@@ -18,12 +15,6 @@ public class RandomGenerator : MonoBehaviour
     {
         // local variables
         int listLeftLimit, listRightLimit, nextInt;
-
-        // filling the list
-        this.levelsList.Add(l1_1);
-        this.levelsList.Add(l1_2);
-        this.levelsList.Add(l2_1);
-
         Quaternion quat = new Quaternion(0,0,0,1);
 
         for (int index = 0; index< TOTAL_CHUNKS; ++index)
