@@ -8,6 +8,7 @@ TagManager:
   - Ground
   - Roof
   - JumpPlane
+  - Canvas
   layers:
   - Default
   - TransparentFX
