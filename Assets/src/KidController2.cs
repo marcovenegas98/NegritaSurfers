@@ -60,27 +60,30 @@ public class KidController2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-    	//Jumping
-        if(kidState.isGoingUp){
-            goUp();
-        }else if (kidState.isGrounded && Input.GetAxis("Vertical") > 0){
-            kidState.isGoingUp = true;
-            goUp();
-        }else if(!kidState.isGrounded){
-            goDown();
-        }
+        if (kidState.isAlive)
+        {
+    	    //Jumping
+            if(kidState.isGoingUp){
+                goUp();
+            }else if (kidState.isGrounded && Input.GetAxis("Vertical") > 0){
+                kidState.isGoingUp = true;
+                goUp();
+            }else if(!kidState.isGrounded){
+                goDown();
+            }
 
-    	if(kidState.isMoving && (transform.position.x != target)){ //Move to the target
-    		t += Time.deltaTime/timeSwitchingTracks; 
-        	transform.position = new Vector3(Mathf.Lerp(startPosition, target, t), transform.position.y, transform.position.z);
-    	}else{ //If not moving
-    		kidState.isMoving = false;
-    		//Receive input and determine if should change tracks
-	    	float direction = Input.GetAxis("Horizontal");
-	        if(direction != 0){
-	        	changeTrack(direction);
-	        }
-    	}
+    	    if(kidState.isMoving && (transform.position.x != target)){ //Move to the target
+    		    t += Time.deltaTime/timeSwitchingTracks; 
+        	    transform.position = new Vector3(Mathf.Lerp(startPosition, target, t), transform.position.y, transform.position.z);
+    	    }else{ //If not moving
+    		    kidState.isMoving = false;
+    		    //Receive input and determine if should change tracks
+	    	    float direction = Input.GetAxis("Horizontal");
+	            if(direction != 0){
+	        	    changeTrack(direction);
+	            }
+    	    }
+        }
     }
 
     //true = right, false = left
@@ -184,5 +187,11 @@ public class KidController2 : MonoBehaviour
 	/// </summary>
 	void ObstacleHit(Obstacle other)
 	{
+        if (this.kidState.isAlive)
+        {
+            Destroy(this.transform.Find("Character").gameObject);
+            this.kidState.isAlive = false;
+            GetComponent<Collider>().enabled = false;
+        }
 	}
 }
