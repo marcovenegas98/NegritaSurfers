@@ -24,13 +24,12 @@ public class KidController2 : MonoBehaviour
 
     private TracksEnum currentTrack = TracksEnum.MIDDLE;
 	private int btwnTrackDistance = 10;
-	private float extraGravity = 9.8f;
     private KidState kidState;
 	private Rigidbody rigidBody;
 	private float t;
 	private float startPosition;
 	private float target;
-    private float terrainSpeedAugmentationFactor = 0.25f;
+    private float terrainSpeedAugmentationFactor = 0.5f;
 	public float jumpMultiplier;
 	public float descentMultiplier;
 
@@ -139,7 +138,7 @@ public class KidController2 : MonoBehaviour
 		switch(other.gameObject.tag){
 			case "Ground" : {
                 if(!kidState.isGrounded){
-                    Terrain.speed -= 0.5f;
+                    Terrain.speed -= terrainSpeedAugmentationFactor;
                 }
 	        	kidState.isGrounded = true;
 			}break;
@@ -155,7 +154,7 @@ public class KidController2 : MonoBehaviour
 		switch(other.gameObject.tag){
 			case "Ground" : {
 	        	kidState.isGrounded = false;
-                Terrain.speed += 0.5f;
+                Terrain.speed += terrainSpeedAugmentationFactor;
 			}break;
 		}
 	}
