@@ -167,4 +167,22 @@ public class KidController2 : MonoBehaviour
 		pos.y -= descentMultiplier;
 		transform.position = pos;
 	}
+
+	void OnTriggerEnter(Collider other)
+	{
+		// Debug.Log("Trigger with " +  other.name + " tagged " + other.tag );
+
+		var obs = other.GetComponent<Obstacle>();
+		if (obs) {
+			Debug.Log("Other is Obstacle");
+			ObstacleHit(obs);
+		}
+	}
+
+	/// <summary>
+	/// Handles logic/animation when hitting an obstacle
+	/// </summary>
+	void ObstacleHit(Obstacle other)
+	{
+	}
 }
