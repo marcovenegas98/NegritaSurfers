@@ -11,11 +11,16 @@ public class KidController2 : MonoBehaviour
         public bool isGrounded;
         public bool isMoving;
         public bool isJuiced;
+        public bool isGoingUp;
     }
 
+    public GameObject ground;
+    public GameObject roof;
+
 	public float timeSwitchingTracks;
-	public float jumpHeight = 400f;
    
+   	private Vector3 INITIAL_LOCATION = new Vector3(0, 3.338f, 0);
+
     private TracksEnum currentTrack = TracksEnum.MIDDLE;
 	private int btwnTrackDistance = 10;
 	private float extraGravity = 9.8f;
@@ -24,34 +29,50 @@ public class KidController2 : MonoBehaviour
 	private float t;
 	private float startPosition;
 	private float target;
+    private float terrainSpeedAugmentationFactor = 0.2f;
+	public float jumpMultiplier;
+	public float descentMultiplier;
+
+
+    private void _initKid(){
+        //Instantiate Ground below and Roof above.
+        Vector3 actualRotation = new Vector3(0.0f, 0.0f, 0.0f);
+        Instantiate(ground, new Vector3(0.0f, 0.0f, 0.0f), Quaternion.Euler(actualRotation));
+        Instantiate(roof, new Vector3(0.0f, 12.88516f, 0.0f), Quaternion.Euler(actualRotation));
+        
+        //Set Kid States
+        kidState.isAlive = true;
+        kidState.isGrounded = true;
+        kidState.isMoving = false;
+        kidState.isJuiced = false;
+        kidState.isGoingUp = false;
+        transform.position = INITIAL_LOCATION;
+    }
 
     // Start is called before the first frame update
     void Start()
     {
-        kidState.isMoving = false;
-        startPosition = target = transform.localPosition.x;
+        _initKid();
+        startPosition = target = transform.position.x;
         rigidBody = GetComponent<Rigidbody>();
-        kidState.isGrounded = true;
     }
 
     // Update is called once per frame
     void Update()
     {
     	//Jumping
-    	if(kidState.isGrounded){
-    		if(Input.GetAxis("Vertical") > 0){
-    			rigidBody.AddForce(Vector3.up * jumpHeight);
-    		}
-    	}else{
-		   Vector3 vel = rigidBody.velocity;
-		   vel.y -= extraGravity * Time.deltaTime;
-		   rigidBody.velocity=vel;
-    	}
+        if(kidState.isGoingUp){
+            goUp();
+        }else if (kidState.isGrounded && Input.GetAxis("Vertical") > 0){
+            kidState.isGoingUp = true;
+            goUp();
+        }else if(!kidState.isGrounded){
+            goDown();
+        }
 
-
-    	if(kidState.isMoving && (transform.localPosition.x != target)){ //Move to the target
+    	if(kidState.isMoving && (transform.position.x != target)){ //Move to the target
     		t += Time.deltaTime/timeSwitchingTracks; 
-        	transform.localPosition = new Vector3(Mathf.Lerp(startPosition, target, t), transform.localPosition.y, transform.localPosition.z);
+        	transform.position = new Vector3(Mathf.Lerp(startPosition, target, t), transform.position.y, transform.position.z);
     	}else{ //If not moving
     		kidState.isMoving = false;
     		//Receive input and determine if should change tracks
@@ -70,7 +91,7 @@ public class KidController2 : MonoBehaviour
     		case TracksEnum.LEFT:{
     			if(direction > 0){ //Can only move right
     				willMove = true;
-    				destination = transform.localPosition.x + btwnTrackDistance;
+    				destination = transform.position.x + btwnTrackDistance;
     				currentTrack = TracksEnum.MIDDLE;
     			}
     		}
@@ -78,10 +99,10 @@ public class KidController2 : MonoBehaviour
     		case TracksEnum.MIDDLE:{
     			willMove = true;
     			if(direction < 0){ //Move left
-    				destination = transform.localPosition.x - btwnTrackDistance;
+    				destination = transform.position.x - btwnTrackDistance;
     				currentTrack = TracksEnum.LEFT;
     			}else{ //Move right
-    				destination = transform.localPosition.x + btwnTrackDistance;
+    				destination = transform.position.x + btwnTrackDistance;
     				currentTrack = TracksEnum.RIGHT;
     			}
     		}
@@ -89,7 +110,7 @@ public class KidController2 : MonoBehaviour
     		case TracksEnum.RIGHT:{ //Can only move left
     			if(direction < 0){
     				willMove = true;
-    				destination = transform.localPosition.x - btwnTrackDistance;
+    				destination = transform.position.x - btwnTrackDistance;
     				currentTrack = TracksEnum.MIDDLE;
     			}
     		}
@@ -104,25 +125,46 @@ public class KidController2 : MonoBehaviour
 
     private void setDestination(float destination, float time){
             t = 0;
-            startPosition = transform.localPosition.x;
+            startPosition = transform.position.x;
             timeSwitchingTracks = time;
             target = destination; 
     } 
 
-     //For further collisions, wont use to jump for now
     void OnCollisionEnter(Collision other)
 	{
-		if (other.gameObject.tag == "Ground")
-	    {
-	        kidState.isGrounded = true;
-	    }
+		switch(other.gameObject.tag){
+			case "Ground" : {
+                if(!kidState.isGrounded){
+                    Terrain.speed -= 0.5f;
+                }
+	        	kidState.isGrounded = true;
+			}break;
+			case "Roof" : {
+				kidState.isGoingUp = false;
+                goDown();
+			}break;
+		}
 	}
 	 
 	void OnCollisionExit(Collision other)
 	{
-	    if (other.gameObject.tag == "Ground")
-	    {
-	        kidState.isGrounded = false;
-	    }
+		switch(other.gameObject.tag){
+			case "Ground" : {
+	        	kidState.isGrounded = false;
+                Terrain.speed += 0.5f;
+			}break;
+		}
+	}
+
+	void goUp(){
+		Vector3 pos = transform.position;
+		pos.y += jumpMultiplier;
+		transform.position = pos;
+	}
+
+	void goDown(){
+		Vector3 pos = transform.position;
+		pos.y -= descentMultiplier;
+		transform.position = pos;
 	}
 }

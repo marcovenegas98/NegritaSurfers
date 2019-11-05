@@ -6,6 +6,8 @@ TagManager:
   tags:
   - terrain
   - Ground
+  - Roof
+  - JumpPlane
   layers:
   - Default
   - TransparentFX
