@@ -5,10 +5,10 @@ using UnityEngine;
 public class RandomGenerator : MonoBehaviour
 {
     public List<GameObject> levelsList;
-    private static int TOTAL_CHUNKS_PER_LEVEL = 8; //2 chunks per dev, per level
+    private static int TOTAL_CHUNKS_PER_LEVEL = 3;
     private static int LEVELS = 3;
     private static int TOTAL_CHUNKS = LEVELS * TOTAL_CHUNKS_PER_LEVEL;
-    private static int TOTAL_PREFABS_PER_LEVEL = 1;
+    private static int TOTAL_PREFABS_PER_LEVEL = 8;
 
     // Start is called before the first frame update
     void Start()
