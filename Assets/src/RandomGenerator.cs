@@ -26,17 +26,12 @@ public class RandomGenerator : MonoBehaviour
             nextInt = Random.Range(listLeftLimit, listRightLimit);
             Instantiate(levelsList[nextInt], new Vector3(10, -0.5f, (253 + 250 * index)), quat);
         }
-        //Quaternion quatChurch = new Quaternion(0.126f,-90f, -1.22f, 1);
-       // Instantiate(church, new Vector3(109, -23, 1100), quatChurch);
+
         var churchInstance = (GameObject)Instantiate(church);
-        //churchInstance.transform.SetParent(levelsList[TOTAL_CHUNKS -1].transform, true);
         churchInstance.transform.localScale = new Vector3(10, 10, 10);
         churchInstance.transform.position = new Vector3(99, -22.5f, 1000);
         churchInstance.transform.rotation = Quaternion.identity;
         churchInstance.transform.Rotate(-1.551f, -90f, -0.178f);
-        
-        //churchInstance.transform.parent = levelsList[TOTAL_CHUNKS -1].transform;
-
     }
 
     // Update is called once per frame
