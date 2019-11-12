@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Terrain : MonoBehaviour
 {
-    public static float speed = 0.7f;
+    public static float speed = 20f;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,6 +14,6 @@ public class Terrain : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        this.transform.position = new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z - speed);
+        this.transform.position = new Vector3(this.transform.position.x, this.transform.position.y, (this.transform.position.z - (speed * Time.deltaTime)));
     }
 }
