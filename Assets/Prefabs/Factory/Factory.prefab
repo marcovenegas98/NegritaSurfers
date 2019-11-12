@@ -129,4 +129,4 @@ MonoBehaviour:
   - {fileID: 672755383247577407, guid: c71273877010fc24abfe15dd86c2c79d, type: 3}
   - {fileID: 2028213360075771796, guid: 06fd85af37ab8784f914024bdea123c6, type: 3}
   - {fileID: 5068856024662481790, guid: 55c0e72be5d99a64d8e821b21c1c401c, type: 3}
-  basilica: {fileID: 100016, guid: 1f1d1994775bf4f4aa22e8e4dcf62845, type: 3}
+  church: {fileID: 6114389937106143811, guid: dfbd5d7fec83243f1b483f8bc95e8ff8, type: 3}
