@@ -29,7 +29,7 @@ public class KidController2 : MonoBehaviour
 	private float t;
 	private float startPosition;
 	private float target;
-    private float terrainSpeedAugmentationFactor = 0.5f;
+    private float terrainSpeedAugmentationFactor = 10f;
 	public float jumpMultiplier;
 	public float descentMultiplier;
 
@@ -161,13 +161,13 @@ public class KidController2 : MonoBehaviour
 
 	void goUp(){
 		Vector3 pos = transform.position;
-		pos.y += jumpMultiplier;
+		pos.y += jumpMultiplier * Time.deltaTime;
 		transform.position = pos;
 	}
 
 	void goDown(){
 		Vector3 pos = transform.position;
-		pos.y -= descentMultiplier;
+		pos.y -= descentMultiplier  * Time.deltaTime;
 		transform.position = pos;
 	}
 
