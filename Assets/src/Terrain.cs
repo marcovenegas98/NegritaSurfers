@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Terrain : MonoBehaviour
 {
-    public static float speed = 20f;
+    public static float speed = 22f;
     // Start is called before the first frame update
     void Start()
     {

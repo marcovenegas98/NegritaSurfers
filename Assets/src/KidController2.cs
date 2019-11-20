@@ -28,9 +28,6 @@ public class KidController2 : MonoBehaviour
 	private float t;
 	private float startPosition;
 	private float target;
-    private float terrainSpeedAugmentationFactor = 10f;
-	public float jumpMultiplier;
-	public float descentMultiplier;
 
     public float jumpHeight;
     public float jumpDist;
@@ -130,15 +127,25 @@ public class KidController2 : MonoBehaviour
             startPosition = transform.position.x;
             timeSwitchingTracks = time;
             target = destination; 
-    } 
+    }
 
+    /// <summary>
+    /// Handles jumping behaviour.
+    /// </summary>
+    /// <remarks>
+    /// The Y position is calculated as a parabola, a function of the distance traveled
+    /// In this way, the jump remains consistent with increasing terrain speed.
+    /// The formula is y = - 4*h/d^2 * x * ( x - d )
+    /// where h is the jump height, d is the jump distance
+    /// and x is the horizontal distance traveled since the start of the jump
+    /// </remarks>
+    /// <returns></returns>
     private IEnumerator JumpCoroutine()
     {
         float distanceTraveled, accel, yOffset;
         accel = - 4 * this.jumpHeight /  Mathf.Pow(jumpDist, 2);
         distanceTraveled = 0;
 
-        var finalPos = new Vector3(transform.position.x, this.INITIAL_LOCATION.y, transform.position.z);
 
         while (distanceTraveled < jumpDist + jumpCooldownDist)
         {
@@ -147,60 +154,19 @@ public class KidController2 : MonoBehaviour
 
             if (distanceTraveled < jumpDist)
             {
-                /// The Y position is calculated as a parabola, a function of the distance traveled
-                /// In this way, the jump remains consistent with increasing terrain speed.
-                /// The formula is y = - 4*h/d^2 * x * ( x - d )
-                /// where h is the jump height, d is the jump distance
-                /// and x is the horizontal distance traveled since the start of the jump
+
                 yOffset = accel * distanceTraveled * (distanceTraveled - jumpDist);
                 yOffset = Mathf.Max(yOffset, 0);
                 var newPos = new Vector3(transform.position.x, this.INITIAL_LOCATION.y + yOffset, transform.position.z);
                 transform.position = newPos;
             } else {
+                var finalPos = new Vector3(transform.position.x, this.INITIAL_LOCATION.y, transform.position.z);
                 transform.position = finalPos;
             }
         }
         kidState.isGrounded = true;
 
     }
-
- //   void OnCollisionEnter(Collision other)
-	//{
-	//	switch(other.gameObject.tag){
-	//		case "Ground" : {
- //               if(!kidState.isGrounded){
- //                   Terrain.speed -= terrainSpeedAugmentationFactor;
- //               }
-	//        	kidState.isGrounded = true;
-	//		}break;
-	//		case "Roof" : {
-	//			kidState.isGoingUp = false;
- //               goDown();
-	//		}break;
-	//	}
-	//}
-	 
-	//void OnCollisionExit(Collision other)
-	//{
-	//	switch(other.gameObject.tag){
-	//		case "Ground" : {
-	//        	kidState.isGrounded = false;
- //               Terrain.speed += terrainSpeedAugmentationFactor;
-	//		}break;
-	//	}
-	//}
-
-	void goUp(){
-		Vector3 pos = transform.position;
-		pos.y += jumpMultiplier * Time.deltaTime;
-		transform.position = pos;
-	}
-
-	void goDown(){
-		Vector3 pos = transform.position;
-		pos.y -= descentMultiplier  * Time.deltaTime;
-		transform.position = pos;
-	}
 
 	void OnTriggerEnter(Collider other)
 	{
