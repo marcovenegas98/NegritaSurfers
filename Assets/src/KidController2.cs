@@ -21,7 +21,6 @@ public class KidController2 : MonoBehaviour
 	public float timeSwitchingTracks;
    
    	private Vector3 INITIAL_LOCATION = new Vector3(0, 3.338f, 0);
-
     private TracksEnum currentTrack = TracksEnum.MIDDLE;
 	private int btwnTrackDistance = 10;
     private KidState kidState;
@@ -29,16 +28,17 @@ public class KidController2 : MonoBehaviour
 	private float t;
 	private float startPosition;
 	private float target;
-    private float terrainSpeedAugmentationFactor = 10f;
-	public float jumpMultiplier;
-	public float descentMultiplier;
+
+    public float jumpHeight;
+    public float jumpDist;
+    public float jumpCooldownDist;
 
 
     private void _initKid(){
         //Instantiate Ground below and Roof above.
         Vector3 actualRotation = new Vector3(0.0f, 0.0f, 0.0f);
-        Instantiate(ground, new Vector3(0.0f, 0.0f, 0.0f), Quaternion.Euler(actualRotation));
-        Instantiate(roof, new Vector3(0.0f, 12.88516f, 0.0f), Quaternion.Euler(actualRotation));
+        //Instantiate(ground, new Vector3(0.0f, 0.0f, 0.0f), Quaternion.Euler(actualRotation));
+        //Instantiate(roof, new Vector3(0.0f, 12.88516f, 0.0f), Quaternion.Euler(actualRotation));
         
         //Set Kid States
         kidState.isAlive = true;
@@ -62,14 +62,10 @@ public class KidController2 : MonoBehaviour
     {
         if (kidState.isAlive)
         {
-    	    //Jumping
-            if(kidState.isGoingUp){
-                goUp();
-            }else if (kidState.isGrounded && Input.GetAxis("Vertical") > 0){
-                kidState.isGoingUp = true;
-                goUp();
-            }else if(!kidState.isGrounded){
-                goDown();
+
+            if (kidState.isGrounded && Input.GetAxis("Vertical") > 0){
+                kidState.isGrounded = false;
+                StartCoroutine("JumpCoroutine");
             }
 
     	    if(kidState.isMoving && (transform.position.x != target)){ //Move to the target
@@ -131,45 +127,46 @@ public class KidController2 : MonoBehaviour
             startPosition = transform.position.x;
             timeSwitchingTracks = time;
             target = destination; 
-    } 
+    }
 
-    void OnCollisionEnter(Collision other)
-	{
-		switch(other.gameObject.tag){
-			case "Ground" : {
-                if(!kidState.isGrounded){
-                    Terrain.speed -= terrainSpeedAugmentationFactor;
-                }
-	        	kidState.isGrounded = true;
-			}break;
-			case "Roof" : {
-				kidState.isGoingUp = false;
-                goDown();
-			}break;
-		}
-	}
-	 
-	void OnCollisionExit(Collision other)
-	{
-		switch(other.gameObject.tag){
-			case "Ground" : {
-	        	kidState.isGrounded = false;
-                Terrain.speed += terrainSpeedAugmentationFactor;
-			}break;
-		}
-	}
+    /// <summary>
+    /// Handles jumping behaviour.
+    /// </summary>
+    /// <remarks>
+    /// The Y position is calculated as a parabola, a function of the distance traveled
+    /// In this way, the jump remains consistent with increasing terrain speed.
+    /// The formula is y = - 4*h/d^2 * x * ( x - d )
+    /// where h is the jump height, d is the jump distance
+    /// and x is the horizontal distance traveled since the start of the jump
+    /// </remarks>
+    /// <returns></returns>
+    private IEnumerator JumpCoroutine()
+    {
+        float distanceTraveled, accel, yOffset;
+        accel = - 4 * this.jumpHeight /  Mathf.Pow(jumpDist, 2);
+        distanceTraveled = 0;
 
-	void goUp(){
-		Vector3 pos = transform.position;
-		pos.y += jumpMultiplier * Time.deltaTime;
-		transform.position = pos;
-	}
 
-	void goDown(){
-		Vector3 pos = transform.position;
-		pos.y -= descentMultiplier  * Time.deltaTime;
-		transform.position = pos;
-	}
+        while (distanceTraveled < jumpDist + jumpCooldownDist)
+        {
+            yield return null;
+            distanceTraveled += Time.deltaTime * Terrain.speed;
+
+            if (distanceTraveled < jumpDist)
+            {
+
+                yOffset = accel * distanceTraveled * (distanceTraveled - jumpDist);
+                yOffset = Mathf.Max(yOffset, 0);
+                var newPos = new Vector3(transform.position.x, this.INITIAL_LOCATION.y + yOffset, transform.position.z);
+                transform.position = newPos;
+            } else {
+                var finalPos = new Vector3(transform.position.x, this.INITIAL_LOCATION.y, transform.position.z);
+                transform.position = finalPos;
+            }
+        }
+        kidState.isGrounded = true;
+
+    }
 
 	void OnTriggerEnter(Collider other)
 	{
