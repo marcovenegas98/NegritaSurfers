@@ -17,6 +17,7 @@ public class KidController2 : MonoBehaviour
 
     public GameObject ground;
     public GameObject roof;
+	public GameObject gameOverPanel;
 
 	public float timeSwitchingTracks;
    
@@ -195,6 +196,7 @@ public class KidController2 : MonoBehaviour
 
     private void UpdateUIGameOverText()
     {
+		gameOverPanel.SetActive(true);
         var canvas = GameObject.FindGameObjectWithTag("Canvas");
         if (canvas)
         {
