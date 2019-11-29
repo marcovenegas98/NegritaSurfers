@@ -22,8 +22,8 @@ public class PotatoController : MonoBehaviour
     {
         if (!isCollected)
         {
-            //var newPos = new Vector3(transform.localPosition.x, localYPos + animator.GetFloat("Yoff"), transform.localPosition.z);
-            //transform.localPosition = newPos;
+            var newPos = new Vector3(transform.localPosition.x, localYPos + animator.GetFloat("Yoff"), transform.localPosition.z);
+            transform.localPosition = newPos;
         } else
         {
             //var newPos = new Vector3(transform.localPosition.x, localYPos + (animator.GetFloat("Yoff") - 0.5f)/5, transform.localPosition.z);
