@@ -43,7 +43,9 @@ public class PauseMenu : MonoBehaviour
 
 	public void QuitGame()
 	{
-		Debug.Log("Quit game!!!");
+
+        PotatoController.TotalPotatoes = 0;
+        Debug.Log("Quit game!!!");
 		SceneManager.LoadScene(0);
 	}
 }
