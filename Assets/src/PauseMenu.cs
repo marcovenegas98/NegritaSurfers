@@ -37,6 +37,7 @@ public class PauseMenu : MonoBehaviour
 
 	public void NewGame()
 	{
+        PotatoController.TotalPotatoes = 0;
 		SceneManager.LoadScene(1);
 	}
 

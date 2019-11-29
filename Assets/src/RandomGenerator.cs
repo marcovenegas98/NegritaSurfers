@@ -6,7 +6,7 @@ public class RandomGenerator : MonoBehaviour
 {
     public List<GameObject> levelsList;
     public GameObject church;
-    private static int TOTAL_CHUNKS_PER_LEVEL = 3;
+    private static int TOTAL_CHUNKS_PER_LEVEL = 5;
     private static int LEVELS = 3;
     private static int TOTAL_CHUNKS = LEVELS * TOTAL_CHUNKS_PER_LEVEL;
     private static int TOTAL_PREFABS_PER_LEVEL = 8;
